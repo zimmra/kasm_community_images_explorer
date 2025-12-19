@@ -405,8 +405,14 @@ def parse_repo(repo_full_name):
             print(f"Skipping subfolder {folder['name']}: No workspace.json file found")
             continue
         
+        file_download_url = workspace_file.get('download_url')
+        if file_download_url and "raw.githubusercontent.com" in file_download_url:
+            parts = file_download_url.split("/")
+            if len(parts) > 5:
+                parts[5] = TARGET_BRANCH
+                file_download_url = "/".join(parts)
         # file_response = requests.get(workspace_file['download_url'])
-        file_response = make_request(workspace_file['download_url'])
+        file_response = make_request(file_download_url)
         if file_response.status_code == 200:
             try:
                 original_workspace_json = file_response.json()
