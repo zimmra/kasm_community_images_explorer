@@ -406,14 +406,17 @@ def parse_repo(repo_full_name):
             continue
         
         file_download_url = workspace_file.get('download_url')
-        if file_download_url and "raw.githubusercontent.com" in file_download_url:
-            parts = file_download_url.split("/")
-            if len(parts) >= 6 and parts[5]:
-                # raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}
-                parts[5] = TARGET_BRANCH
-                file_download_url = "/".join(parts)
-            else:
-                print(f"Unexpected raw URL format for workspace.json in {repo_full_name}, skipping branch override")
+        if file_download_url:
+            from urllib.parse import urlparse
+            parsed_url = urlparse(file_download_url)
+            if parsed_url.netloc == "raw.githubusercontent.com":
+                parts = file_download_url.split("/")
+                if len(parts) >= 6 and parts[5]:
+                    # raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}
+                    parts[5] = TARGET_BRANCH
+                    file_download_url = "/".join(parts)
+                else:
+                    print(f"Unexpected raw URL format for workspace.json in {repo_full_name}, skipping branch override")
         if not file_download_url:
             print(f"Skipping subfolder {folder['name']}: No download URL found for workspace.json")
             continue
