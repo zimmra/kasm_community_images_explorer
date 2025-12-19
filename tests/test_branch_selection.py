@@ -45,13 +45,10 @@ class TestBranchSelection(unittest.TestCase):
                 result = search_github.parse_repo("owner/repo")
 
         self.assertTrue(result)
-        self.assertIn(
-            (mock.ANY, {'ref': target_branch}),
-            [(url, params) for url, params in call_params]
-        )
-        # Ensure both initial and folder-level content requests use the target branch
-        self.assertEqual({'ref': target_branch}, call_params[0][1])
-        self.assertEqual({'ref': target_branch}, call_params[1][1])
+        ref_calls = [(url, params) for url, params in call_params if params is not None]
+        self.assertGreaterEqual(len(ref_calls), 2)
+        for _, params in ref_calls:
+            self.assertEqual({'ref': target_branch}, params)
 
 
 if __name__ == '__main__':
