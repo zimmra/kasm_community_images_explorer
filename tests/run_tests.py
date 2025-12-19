@@ -17,7 +17,8 @@ from tests import (
     test_image_filtering,
     test_url_validation,
     test_filter_workspace,
-    test_compatibility_limits
+    test_compatibility_limits,
+    test_branch_selection
 )
 
 
@@ -42,7 +43,8 @@ def run_all_tests(verbosity=2):
         test_image_filtering,
         test_url_validation,
         test_filter_workspace,
-        test_compatibility_limits
+        test_compatibility_limits,
+        test_branch_selection
     ]
     
     for module in test_modules:

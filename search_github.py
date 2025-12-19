@@ -27,6 +27,7 @@ if not GITHUB_PAT:
 
 SEARCH_URL = "https://api.github.com/search/repositories"
 SEARCH_QUERY = 'in:readme sort:updated -user:kasmtech "KASM-REGISTRY-DISCOVERY-IDENTIFIER"'
+TARGET_BRANCH = "1.1"
 
 
 REPOS = []
@@ -373,7 +374,7 @@ def get_search_results():
 def parse_repo(repo_full_name):
     # go through the repo and go to "workspaces" folder
     contents_url = f"https://api.github.com/repos/{repo_full_name}/contents/workspaces"
-    response = make_request(contents_url)
+    response = make_request(contents_url, params={'ref': TARGET_BRANCH})
     # print(response.json())
     if response.status_code != 200:
         print(f"Skipping {repo_full_name}: No 'workspaces' folder found")
@@ -394,7 +395,7 @@ def parse_repo(repo_full_name):
     for folder in workspace_folders:
         folder_url = folder['url']
         # folder_response = requests.get(folder_url)
-        folder_response = make_request(folder_url)
+        folder_response = make_request(folder_url, params={'ref': TARGET_BRANCH})
         if folder_response.status_code != 200:
             print(f"Skipping folder {folder['name']}: Unable to access folder contents")
             continue
