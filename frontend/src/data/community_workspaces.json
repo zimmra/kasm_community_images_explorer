@@ -1,4 +1,234 @@
 {
+    "squirrelworksllc/kasm-registry": {
+        "github_pages": "https://squirrelworksllc.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2025-12-20T23:54:29Z",
+        "workspaces": [
+            {
+                "remnux": {
+                    "description": "REMnux is a Linux toolkit for reverse-engineering and analyzing malicious software.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "remnux_wkspc.png",
+                    "run_config": {
+                        "hostname": "remnux"
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+                        },
+                        "assign": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+                        }
+                    },
+                    "categories": [
+                        "Desktop",
+                        "Malware",
+                        "Reverse-Engineering",
+                        "Analysis"
+                    ],
+                    "friendly_name": "REMnux",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "squirrelworksllc/remnux:1.18.0",
+                            "cores": 2,
+                            "memory": 4286,
+                            "uncompressed_size_mb": 10802,
+                            "available_tags": [
+                                "1.18.0",
+                                "develop"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "ubuntu_noble": {
+                    "description": "This is a custom Ubuntu 24.04 LTS build.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "noble_numbat_custom.png",
+                    "run_config": {
+                        "hostname": "ubuntu"
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+                        },
+                        "assign": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+                        }
+                    },
+                    "categories": [
+                        "Desktop",
+                        "Productivity",
+                        "Development"
+                    ],
+                    "friendly_name": "Ubuntu 24.04 LTS",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "squirrelworksllc/ubuntu-noble-desktop:1.18.0",
+                            "cores": 2,
+                            "memory": 2048,
+                            "uncompressed_size_mb": 3492,
+                            "available_tags": [
+                                "1.18.0",
+                                "develop"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "ubuntu_noble_dind": {
+                    "description": "This is a custom Ubuntu 24.04 LTS build.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "noble_dind_custom.png",
+                    "run_config": {
+                        "hostname": "ubuntu"
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+                        },
+                        "assign": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+                        }
+                    },
+                    "categories": [
+                        "Desktop",
+                        "Productivity",
+                        "Development"
+                    ],
+                    "friendly_name": "Ubuntu 24.04 DIND",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "squirrelworksllc/ubuntu-noble-dind:1.18.0",
+                            "cores": 2,
+                            "memory": 2048,
+                            "uncompressed_size_mb": 2010,
+                            "available_tags": [
+                                "1.18.0",
+                                "develop"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "l3ochan/kasm-registry": {
+        "github_pages": "https://l3ochan.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2025-12-20T14:09:15Z",
+        "workspaces": [
+            {
+                "Blender": {
+                    "description": "This workspace is an install of Ubuntu Jammy with Blender and some useful utilities alongside. It has GPU/CUDA acceleration.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "blender.png",
+                    "cores": 4,
+                    "memory": 10240,
+                    "gpu_count": 1,
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "categories": [
+                        "Desktop",
+                        "Multimedia",
+                        "Productivity"
+                    ],
+                    "friendly_name": "Blender",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "l3ochan/ubuntu-jammy-blender-workspace",
+                            "uncompressed_size_mb": 12997,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "env_sae_502": {
+                    "description": "This workspace is an install of VScode with the necessary utilities and dependencies for SAE502",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "Code.png",
+                    "cores": 2,
+                    "memory": 4096,
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "categories": [
+                        "Development",
+                        "SAE"
+                    ],
+                    "friendly_name": "Workspace SAE_302",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "l3ochan/env_sae_502",
+                            "uncompressed_size_mb": 5536,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "gemini-cli": {
+                    "description": "This workspace is an install of Debian Bookworm with Gemini CLI and npm",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "geminicli.png",
+                    "cores": 2,
+                    "memory": 4096,
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "categories": [
+                        "LLM",
+                        "Desktop"
+                    ],
+                    "friendly_name": "Gemini-cli",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "l3ochan/geminicli_desktop",
+                            "uncompressed_size_mb": 2831,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
     "double16/kasm-workspaces": {
         "github_pages": "https://double16.github.io/kasm-workspaces/",
         "stars": 1,
@@ -527,93 +757,6 @@
             }
         ]
     },
-    "squirrelworksllc/kasm-registry": {
-        "github_pages": "https://squirrelworksllc.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2025-12-16T12:43:03Z",
-        "workspaces": [
-            {
-                "ubuntu_noble": {
-                    "description": "This is a custom Ubuntu 24.04 LTS build.",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "noble_numbat_custom.png",
-                    "run_config": {
-                        "hostname": "ubuntu"
-                    },
-                    "exec_config": {
-                        "go": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
-                        },
-                        "assign": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
-                        }
-                    },
-                    "categories": [
-                        "Desktop",
-                        "Productivity",
-                        "Development"
-                    ],
-                    "friendly_name": "Ubuntu 24.04 LTS",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "squirrelworksllc/ubuntu-noble-desktop:1.18.0",
-                            "cores": 2,
-                            "memory": 2048,
-                            "uncompressed_size_mb": 3492,
-                            "available_tags": [
-                                "1.18.0",
-                                "develop"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "ubuntu_noble_dind": {
-                    "description": "This is a custom Ubuntu 24.04 LTS build.",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "noble_dind_custom.png",
-                    "run_config": {
-                        "hostname": "ubuntu"
-                    },
-                    "exec_config": {
-                        "go": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
-                        },
-                        "assign": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
-                        }
-                    },
-                    "categories": [
-                        "Desktop",
-                        "Productivity",
-                        "Development"
-                    ],
-                    "friendly_name": "Ubuntu 24.04 DIND",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "squirrelworksllc/ubuntu-noble-dind:1.18.0",
-                            "cores": 2,
-                            "memory": 2048,
-                            "uncompressed_size_mb": 2010,
-                            "available_tags": [
-                                "1.18.0",
-                                "develop"
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
-    },
     "wolfpackmars2/kasm-registry": {
         "github_pages": "https://wolfpackmars2.github.io/kasm-registry/",
         "stars": 0,
@@ -759,7 +902,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2025-12-19T12:20:57Z",
+        "last_commit": "2025-12-20T12:18:54Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -7415,77 +7558,6 @@
                     "friendly_name": "Firefox",
                     "architecture": [
                         "amd64"
-                    ]
-                }
-            }
-        ]
-    },
-    "l3ochan/kasm-registry": {
-        "github_pages": "https://l3ochan.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2025-09-01T12:33:11Z",
-        "workspaces": [
-            {
-                "Blender": {
-                    "description": "This workspace is an install of Ubuntu Jammy with Blender and some useful utilities alongside. It has GPU/CUDA acceleration.",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "blender.png",
-                    "cores": 4,
-                    "memory": 10240,
-                    "gpu_count": 1,
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "categories": [
-                        "Desktop",
-                        "Multimedia",
-                        "Productivity"
-                    ],
-                    "friendly_name": "Blender",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "l3ochan/ubuntu-jammy-blender-workspace",
-                            "uncompressed_size_mb": 12997,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "env_sae_502": {
-                    "description": "This workspace is an install of VScode with the necessary utilities and dependencies for SAE502",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "Code.png",
-                    "cores": 2,
-                    "memory": 4096,
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "categories": [
-                        "Development",
-                        "SAE"
-                    ],
-                    "friendly_name": "Workspace SAE_302",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "l3ochan/env_sae_502",
-                            "uncompressed_size_mb": 5536,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
                     ]
                 }
             }
