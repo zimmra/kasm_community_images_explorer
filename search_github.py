@@ -27,6 +27,7 @@ if not GITHUB_PAT:
 
 SEARCH_URL = "https://api.github.com/search/repositories"
 SEARCH_QUERY = 'in:readme sort:updated -user:kasmtech "KASM-REGISTRY-DISCOVERY-IDENTIFIER"'
+TARGET_BRANCH = "1.1"
 
 
 REPOS = []
@@ -373,7 +374,7 @@ def get_search_results():
 def parse_repo(repo_full_name):
     # go through the repo and go to "workspaces" folder
     contents_url = f"https://api.github.com/repos/{repo_full_name}/contents/workspaces"
-    response = make_request(contents_url)
+    response = make_request(contents_url, params={'ref': TARGET_BRANCH})
     # print(response.json())
     if response.status_code != 200:
         print(f"Skipping {repo_full_name}: No 'workspaces' folder found")
@@ -394,7 +395,7 @@ def parse_repo(repo_full_name):
     for folder in workspace_folders:
         folder_url = folder['url']
         # folder_response = requests.get(folder_url)
-        folder_response = make_request(folder_url)
+        folder_response = make_request(folder_url, params={'ref': TARGET_BRANCH})
         if folder_response.status_code != 200:
             print(f"Skipping folder {folder['name']}: Unable to access folder contents")
             continue
@@ -404,8 +405,23 @@ def parse_repo(repo_full_name):
             print(f"Skipping subfolder {folder['name']}: No workspace.json file found")
             continue
         
+        file_download_url = workspace_file.get('download_url')
+        if file_download_url:
+            from urllib.parse import urlparse
+            parsed_url = urlparse(file_download_url)
+            if parsed_url.netloc == "raw.githubusercontent.com":
+                parts = file_download_url.split("/")
+                if len(parts) >= 6 and parts[5]:
+                    # raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}
+                    parts[5] = TARGET_BRANCH
+                    file_download_url = "/".join(parts)
+                else:
+                    print(f"Unexpected raw URL format for workspace.json in {repo_full_name}, skipping branch override")
+        if not file_download_url:
+            print(f"Skipping subfolder {folder['name']}: No download URL found for workspace.json")
+            continue
         # file_response = requests.get(workspace_file['download_url'])
-        file_response = make_request(workspace_file['download_url'])
+        file_response = make_request(file_download_url)
         if file_response.status_code == 200:
             try:
                 original_workspace_json = file_response.json()
