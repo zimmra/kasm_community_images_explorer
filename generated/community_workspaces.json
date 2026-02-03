@@ -1,4 +1,67 @@
 {
+    "RuffyJK/kasm-registry": {
+        "github_pages": "https://ruffyjk.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-02-02T18:40:52Z",
+        "workspaces": [
+            {
+                "Kali": {
+                    "friendly_name": "Kali Rolling Desktop - Default Tools",
+                    "description": "Kali Rolling Desktop (Kasm) with the kali-linux-default metapackage installed.",
+                    "image_src": "pepe-hacker.jpg",
+                    "categories": [
+                        "Security",
+                        "Operating systems"
+                    ],
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "docker_registry": "https://ghcr.io",
+                    "cores": 4,
+                    "memory": 8192,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "notes": "Heavier desktop image (kali-linux-default). If sessions restart/crash, increase memory/cores and verify the agent host has sufficient free RAM/CPU.",
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/ruffyjk/kasm-kali-default:1.18.0-kali-default",
+                            "uncompressed_size_mb": 15000,
+                            "available_tags": [
+                                "1.18.0-kali-default"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Test": {
+                    "friendly_name": "Kali Rolling Desktop - SMOKE",
+                    "description": "Smoke test image to validate custom registry + pull + launch.",
+                    "image_src": "test.jpeg",
+                    "categories": [
+                        "Security",
+                        "Operating systems"
+                    ],
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "docker_registry": "https://ghcr.io",
+                    "cores": 2,
+                    "memory": 4096,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/ruffyjk/kasm-kali-default:1.18.0-smoke",
+                            "uncompressed_size_mb": 15000
+                        }
+                    ]
+                }
+            }
+        ]
+    },
     "Snowflake6413/someregistry": {
         "github_pages": "https://snowflake6413.github.io/someregistry/",
         "stars": 0,
@@ -34,7 +97,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-02-01T12:24:12Z",
+        "last_commit": "2026-02-02T12:31:46Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
