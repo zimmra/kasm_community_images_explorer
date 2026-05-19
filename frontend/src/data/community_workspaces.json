@@ -2,7 +2,7 @@
     "alove4tech/kasm-registry": {
         "github_pages": "https://alove4tech.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-05-17T17:40:57Z",
+        "last_commit": "2026-05-18T01:03:14Z",
         "workspaces": [
             {
                 "CyberChef": {
@@ -202,7 +202,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-05-17T12:49:56Z",
+        "last_commit": "2026-05-18T14:50:40Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -2543,6 +2543,58 @@
             }
         ]
     },
+    "danstis/kasm-workspaces": {
+        "github_pages": "https://danstis.github.io/kasm-workspaces/",
+        "stars": 0,
+        "last_commit": "2026-05-03T07:37:10Z",
+        "workspaces": [
+            {
+                "RustDesk": {
+                    "friendly_name": "RustDesk",
+                    "image_src": "rustdesk.png",
+                    "description": "RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.",
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://ghcr.io/",
+                    "categories": [
+                        "Productivity"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "run_config": {
+                        "security_opt": [
+                            "seccomp=unconfined"
+                        ],
+                        "entrypoint": [
+                            "/kasminit"
+                        ],
+                        "user": 1000,
+                        "environment": {
+                            "HOME": "/home/kasm-user"
+                        }
+                    },
+                    "exec_config": {},
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "lscr.io/linuxserver/rustdesk:latest",
+                            "uncompressed_size_mb": 2470,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
     "syscall00/kasm-registry": {
         "github_pages": "https://syscall00.github.io/kasm-registry/",
         "stars": 0,
@@ -3942,6 +3994,94 @@
                             ]
                         }
                     ]
+                }
+            }
+        ]
+    },
+    "yuyuvn/kasm-registry": {
+        "github_pages": "https://yuyuvn.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-04-13T22:06:56Z",
+        "workspaces": [
+            {
+                "Bambustudio": {
+                    "description": "3D printer slicer for Bambu",
+                    "docker_registry": "https://ghcr.io/",
+                    "image_src": "bambustudio.png",
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "cpu_allocation_method": "Inherit",
+                    "categories": [
+                        "Development"
+                    ],
+                    "friendly_name": "Bambu Studio",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "lscr.io/linuxserver/bambustudio:latest",
+                            "uncompressed_size_mb": 1250,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "rojosinalma/kasm-registry": {
+        "github_pages": "https://rojosinalma.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-04-12T21:42:32Z",
+        "workspaces": [
+            {
+                "Gimp": {
+                    "friendly_name": "GIMP",
+                    "image_src": "gimp.png",
+                    "description": "GIMP is a free and open-source raster graphics editor used for image manipulation (retouching) and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks. It is extensible by means of plugins, and scriptable.",
+                    "name": "lscr.io/linuxserver/gimp:latest",
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://ghcr.io/",
+                    "categories": [
+                        "Multimedia"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "run_config": {
+                        "security_opt": [
+                            "seccomp=unconfined"
+                        ],
+                        "entrypoint": [
+                            "/kasminit"
+                        ],
+                        "user": 1000,
+                        "environment": {
+                            "HOME": "/home/kasm-user"
+                        }
+                    },
+                    "exec_config": {},
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        "1.13.x",
+                        "1.14.x",
+                        "1.15.x",
+                        "1.16.x"
+                    ],
+                    "uncompressed_size_mb": 1310
                 }
             }
         ]
@@ -5904,52 +6044,78 @@
             }
         ]
     },
-    "rojosinalma/kasm-registry": {
-        "github_pages": "https://rojosinalma.github.io/kasm-registry/",
+    "NEUR0515/kasm-registry": {
+        "github_pages": "https://neur0515.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-04-12T21:42:32Z",
+        "last_commit": "2026-01-30T08:06:42Z",
         "workspaces": [
             {
-                "Gimp": {
-                    "friendly_name": "GIMP",
-                    "image_src": "gimp.png",
-                    "description": "GIMP is a free and open-source raster graphics editor used for image manipulation (retouching) and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks. It is extensible by means of plugins, and scriptable.",
-                    "name": "lscr.io/linuxserver/gimp:latest",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://ghcr.io/",
-                    "categories": [
-                        "Multimedia"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
+                "KasmDINDUbuntu": {
+                    "description": "Custom Kasm Ubuntu DIND Workspace",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "kasmdesktopubuntu.svg",
                     "run_config": {
-                        "security_opt": [
-                            "seccomp=unconfined"
-                        ],
-                        "entrypoint": [
-                            "/kasminit"
-                        ],
-                        "user": 1000,
-                        "environment": {
-                            "HOME": "/home/kasm-user"
-                        }
+                        "hostname": "kasm-docker-ubuntu"
                     },
-                    "exec_config": {},
+                    "categories": [
+                        "Desktop",
+                        "Development",
+                        "Docker",
+                        "Ubuntu"
+                    ],
+                    "friendly_name": "KasmDINDUbuntu",
                     "architecture": [
-                        "amd64",
-                        "arm64"
+                        "amd64"
                     ],
                     "compatibility": [
-                        "1.13.x",
-                        "1.14.x",
-                        "1.15.x",
-                        "1.16.x"
+                        {
+                            "version": "1.17.x",
+                            "image": "n3ur0515/kasm-dind-ubuntu:development",
+                            "available_tags": [
+                                "development"
+                            ]
+                        },
+                        {
+                            "version": "1.16.x",
+                            "image": "n3ur0515/kasm-dind-ubuntu:development",
+                            "available_tags": [
+                                "development"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "KasmDesktopUbuntu": {
+                    "description": "Custom Kasm Ubuntu Desktop Workspace",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "kasmdesktopubuntu.svg",
+                    "run_config": {
+                        "hostname": "kasm-desktop-ubuntu"
+                    },
+                    "categories": [
+                        "Desktop"
                     ],
-                    "uncompressed_size_mb": 1310
+                    "friendly_name": "KasmDesktopUbuntu",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "n3ur0515/kasm-desktop-ubuntu:development",
+                            "available_tags": [
+                                "development"
+                            ]
+                        },
+                        {
+                            "version": "1.16.x",
+                            "image": "n3ur0515/kasm-desktop-ubuntu:development",
+                            "available_tags": [
+                                "development"
+                            ]
+                        }
+                    ]
                 }
             }
         ]
@@ -6268,44 +6434,6 @@
             }
         ]
     },
-    "yuyuvn/kasm-registry": {
-        "github_pages": "https://yuyuvn.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2026-04-13T22:06:56Z",
-        "workspaces": [
-            {
-                "Bambustudio": {
-                    "description": "3D printer slicer for Bambu",
-                    "docker_registry": "https://ghcr.io/",
-                    "image_src": "bambustudio.png",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "cpu_allocation_method": "Inherit",
-                    "categories": [
-                        "Development"
-                    ],
-                    "friendly_name": "Bambu Studio",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "lscr.io/linuxserver/bambustudio:latest",
-                            "uncompressed_size_mb": 1250,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
-    },
     "l3ochan/kasm-registry": {
         "github_pages": "https://l3ochan.github.io/kasm-registry/",
         "stars": 0,
@@ -6399,58 +6527,6 @@
                             "version": "1.17.x",
                             "image": "l3ochan/geminicli_desktop",
                             "uncompressed_size_mb": 2831,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
-    },
-    "danstis/kasm-workspaces": {
-        "github_pages": "https://danstis.github.io/kasm-workspaces/",
-        "stars": 0,
-        "last_commit": "2026-05-03T07:37:10Z",
-        "workspaces": [
-            {
-                "RustDesk": {
-                    "friendly_name": "RustDesk",
-                    "image_src": "rustdesk.png",
-                    "description": "RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://ghcr.io/",
-                    "categories": [
-                        "Productivity"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "run_config": {
-                        "security_opt": [
-                            "seccomp=unconfined"
-                        ],
-                        "entrypoint": [
-                            "/kasminit"
-                        ],
-                        "user": 1000,
-                        "environment": {
-                            "HOME": "/home/kasm-user"
-                        }
-                    },
-                    "exec_config": {},
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "lscr.io/linuxserver/rustdesk:latest",
-                            "uncompressed_size_mb": 2470,
                             "available_tags": [
                                 "latest"
                             ]
@@ -10323,6 +10399,34 @@
             }
         ]
     },
+    "wilsonwong1990/kasm_workspaces_registry": {
+        "github_pages": "http://blog.wwong.me/kasm_workspaces_registry/",
+        "stars": 0,
+        "last_commit": "2025-11-18T18:59:57Z",
+        "workspaces": [
+            {
+                "flash": {
+                    "description": "Adobe Flash support",
+                    "docker_registry": "https://registry.hub.docker.com",
+                    "name": "jchprj/play-adobe-flash-after-eol:latest",
+                    "image_src": "flash.png",
+                    "categories": [
+                        "Desktop"
+                    ],
+                    "friendly_name": "Adobe Flash",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        "1.13.x",
+                        "1.14.x"
+                    ],
+                    "uncompressed_size_mb": 500
+                }
+            }
+        ]
+    },
     "Raspen83/kasm-registry": {
         "github_pages": "https://raspen83.github.io/kasm-registry/",
         "stars": 0,
@@ -11123,82 +11227,6 @@
                     "friendly_name": "Firefox",
                     "architecture": [
                         "amd64"
-                    ]
-                }
-            }
-        ]
-    },
-    "NEUR0515/kasm-registry": {
-        "github_pages": "https://neur0515.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2026-01-30T08:06:42Z",
-        "workspaces": [
-            {
-                "KasmDINDUbuntu": {
-                    "description": "Custom Kasm Ubuntu DIND Workspace",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "kasmdesktopubuntu.svg",
-                    "run_config": {
-                        "hostname": "kasm-docker-ubuntu"
-                    },
-                    "categories": [
-                        "Desktop",
-                        "Development",
-                        "Docker",
-                        "Ubuntu"
-                    ],
-                    "friendly_name": "KasmDINDUbuntu",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "n3ur0515/kasm-dind-ubuntu:development",
-                            "available_tags": [
-                                "development"
-                            ]
-                        },
-                        {
-                            "version": "1.16.x",
-                            "image": "n3ur0515/kasm-dind-ubuntu:development",
-                            "available_tags": [
-                                "development"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "KasmDesktopUbuntu": {
-                    "description": "Custom Kasm Ubuntu Desktop Workspace",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "kasmdesktopubuntu.svg",
-                    "run_config": {
-                        "hostname": "kasm-desktop-ubuntu"
-                    },
-                    "categories": [
-                        "Desktop"
-                    ],
-                    "friendly_name": "KasmDesktopUbuntu",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "n3ur0515/kasm-desktop-ubuntu:development",
-                            "available_tags": [
-                                "development"
-                            ]
-                        },
-                        {
-                            "version": "1.16.x",
-                            "image": "n3ur0515/kasm-desktop-ubuntu:development",
-                            "available_tags": [
-                                "development"
-                            ]
-                        }
                     ]
                 }
             }
@@ -15519,34 +15547,6 @@
                         "1.16.x"
                     ],
                     "uncompressed_size_mb": 4222
-                }
-            }
-        ]
-    },
-    "wilsonwong1990/kasm_workspaces_registry": {
-        "github_pages": "http://blog.wwong.me/kasm_workspaces_registry/",
-        "stars": 0,
-        "last_commit": "2025-11-18T18:59:57Z",
-        "workspaces": [
-            {
-                "flash": {
-                    "description": "Adobe Flash support",
-                    "docker_registry": "https://registry.hub.docker.com",
-                    "name": "jchprj/play-adobe-flash-after-eol:latest",
-                    "image_src": "flash.png",
-                    "categories": [
-                        "Desktop"
-                    ],
-                    "friendly_name": "Adobe Flash",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        "1.13.x",
-                        "1.14.x"
-                    ],
-                    "uncompressed_size_mb": 500
                 }
             }
         ]
