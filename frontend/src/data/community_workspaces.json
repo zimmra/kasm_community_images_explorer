@@ -1,4 +1,126 @@
 {
+    "jti989/kasm-repository": {
+        "github_pages": "https://jti989.github.io/kasm-repository/",
+        "stars": 0,
+        "last_commit": "2026-05-20T21:12:09Z",
+        "workspaces": [
+            {
+                "ADB Service": {
+                    "description": "ADB service container for installing and managing Android apps over the network.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "adb-service.png",
+                    "run_config": {
+                        "hostname": "adbd"
+                    },
+                    "categories": [
+                        "Development",
+                        "Utility"
+                    ],
+                    "friendly_name": "ADB Service",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "notes": "Use adb -H <workspace-ip> -P 5037 from another workspace/client to connect to this daemon.",
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "gounthar/docker-adb:latest",
+                            "uncompressed_size_mb": 0,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "gounthar/docker-adb:latest",
+                            "uncompressed_size_mb": 0,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "FreeCAD": {
+                    "description": "FreeCAD is a free and open-source parametric 3D CAD modeler, designed for product design, mechanical engineering, and architecture.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "freecad.png",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "categories": [
+                        "Engineering",
+                        "Design"
+                    ],
+                    "friendly_name": "FreeCAD",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "linuxserver/freecad:1.1.1",
+                            "uncompressed_size_mb": 0,
+                            "available_tags": [
+                                "1.1.1",
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "linuxserver/freecad:1.1.1",
+                            "uncompressed_size_mb": 0,
+                            "available_tags": [
+                                "1.1.1",
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Ultimaker Cura": {
+                    "description": "Ultimaker Cura is an open-source 3D printing slicer for preparing and optimizing models for printing.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "ultimaker-cura.png",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "categories": [
+                        "Engineering",
+                        "3D Printing"
+                    ],
+                    "friendly_name": "Ultimaker Cura",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "linuxserver/cura:5.12.1",
+                            "uncompressed_size_mb": 0,
+                            "available_tags": [
+                                "5.12.1",
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "linuxserver/cura:5.12.1",
+                            "uncompressed_size_mb": 0,
+                            "available_tags": [
+                                "5.12.1",
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
     "alove4tech/kasm-registry": {
         "github_pages": "https://alove4tech.github.io/kasm-registry/",
         "stars": 0,
@@ -202,7 +324,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-05-19T14:28:58Z",
+        "last_commit": "2026-05-20T14:30:06Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
