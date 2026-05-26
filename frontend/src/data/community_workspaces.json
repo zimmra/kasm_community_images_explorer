@@ -2,11 +2,11 @@
     "ddiebold91/kasm-registry": {
         "github_pages": "https://ddiebold91.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-05-23T21:05:30Z",
+        "last_commit": "2026-05-25T16:29:46Z",
         "workspaces": [
             {
-                "ubuntu_noble_test": {
-                    "friendly_name": "Ubuntu Noble",
+                "ubuntu_noble_with_software": {
+                    "friendly_name": "Ubuntu Noble with Software",
                     "image_src": "ubuntu_noble.jpg",
                     "description": "Ubuntu 24.04 LTS (Noble Numbat) custom desktop workspace with personal tools.",
                     "docker_registry": "https://index.docker.io/v1/",
@@ -34,10 +34,12 @@
                     "compatibility": [
                         {
                             "version": "1.17.x",
-                            "image": "ddiebold/customubuntunoble:05-23-2026",
-                            "uncompressed_size_mb": 1270,
+                            "image": "ddiebold/customubuntunoble:05-25-2026",
+                            "uncompressed_size_mb": 2676,
                             "available_tags": [
-                                "05-23-2026"
+                                "05-22-2026",
+                                "05-23-2026",
+                                "05-25-2026"
                             ]
                         }
                     ]
@@ -370,7 +372,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-05-24T12:56:14Z",
+        "last_commit": "2026-05-25T14:29:52Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
