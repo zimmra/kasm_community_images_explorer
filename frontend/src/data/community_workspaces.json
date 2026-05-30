@@ -1,4 +1,39 @@
 {
+    "jtruland/kasm-registry": {
+        "github_pages": "https://jtruland.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-05-29T15:14:27Z",
+        "workspaces": [
+            {
+                "Claude Code Custom": {
+                    "description": "Claude Code (custom) \u2014 Kasm desktop running the Claude Code CLI plus developer tooling: gh, docker-cli, Playwright/Chromium, Python (pip/pipx/uv/ansible), and .NET 8 SDK + pac CLI (Power Platform). The ~/.claude profile is persisted via the Kasm persistent profile volume. [Build: 2026-05-29 15:11 UTC]",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "claude-code.png",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "categories": [
+                        "Development"
+                    ],
+                    "friendly_name": "Claude Code Custom",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.19.0",
+                            "image": "jtruland/kasm-claude-code:develop",
+                            "uncompressed_size_mb": 6722,
+                            "available_tags": [
+                                "develop",
+                                "20260529-1511"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
     "ddiebold91/kasm-registry": {
         "github_pages": "https://ddiebold91.github.io/kasm-registry/",
         "stars": 0,
@@ -372,7 +407,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-05-28T15:03:40Z",
+        "last_commit": "2026-05-29T14:34:33Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
