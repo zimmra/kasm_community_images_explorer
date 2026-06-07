@@ -1,1372 +1,12 @@
 {
-    "dcat23/kasm-registry": {
-        "github_pages": "https://dcat23.github.io/kasm-registry/",
-        "stars": 1,
-        "last_commit": "2026-06-05T12:29:18Z",
-        "workspaces": [
-            {
-                "Amnesia Desktop": {
-                    "friendly_name": "Amnesia Desktop",
-                    "image_src": "amnesia-desktop.jpg",
-                    "description": "Ephemeral, privacy-first desktop inspired by Tails. Includes Tor Browser, Thunderbird with OpenPGP, KeePassXC, GnuPG, MAT2, OnionShare, LibreOffice, and torsocks for anonymous CLI workflows. Sessions leave no persistent traces by default.",
-                    "cores": 2,
-                    "memory": 5200,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "categories": [
-                        "Desktop",
-                        "Security"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "name": "macchiato23/kasm-amnesia-desktop:latest",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "macchiato23/kasm-amnesia-desktop:latest",
-                            "uncompressed_size_mb": 8000,
-                            "available_tags": [
-                                "develop",
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.17.x",
-                            "image": "macchiato23/kasm-amnesia-desktop:latest",
-                            "uncompressed_size_mb": 8000,
-                            "available_tags": [
-                                "develop",
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "Java Development": {
-                    "friendly_name": "Java Development",
-                    "image_src": "java-development.png",
-                    "description": "Tools and editors for java based development environment. ",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "categories": [
-                        "Development",
-                        "Desktop"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "name": "macchiato23/kasm-development:latest",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "macchiato23/kasm-development:latest",
-                            "uncompressed_size_mb": 4660,
-                            "available_tags": [
-                                "develop",
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.17.x",
-                            "image": "macchiato23/kasm-development:latest",
-                            "uncompressed_size_mb": 4660,
-                            "available_tags": [
-                                "develop",
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.16.x",
-                            "image": "macchiato23/kasm-development:develop",
-                            "uncompressed_size_mb": 5040,
-                            "available_tags": [
-                                "develop"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "LM Studio": {
-                    "friendly_name": "LM Studio",
-                    "image_src": "lm-studio.jpg",
-                    "description": "Tools and editors for java based development environment. ",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "categories": [
-                        "Development",
-                        "Desktop"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "name": "macchiato23/kasm-lm-studio:latest",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "macchiato23/kasm-lm-studio:latest",
-                            "uncompressed_size_mb": 4660,
-                            "available_tags": [
-                                "develop",
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.17.x",
-                            "image": "macchiato23/kasm-lm-studio:latest",
-                            "uncompressed_size_mb": 4660,
-                            "available_tags": [
-                                "develop",
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "ParrotOS 7 Rootless": {
-                    "friendly_name": "Parrot OS 7 (rootless)",
-                    "image_src": "parrot-os.png",
-                    "description": "Parrot OS 7 rootless desktop for Kasm Workspaces",
-                    "cores": 2,
-                    "memory": 5200,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "categories": [
-                        "Development",
-                        "Desktop"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "name": "macchiato23/kasm-parrotos-7-rootless:latest",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "macchiato23/kasm-parrotos-7-rootless:latest",
-                            "uncompressed_size_mb": 16000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.17.x",
-                            "image": "macchiato23/kasm-parrotos-7-rootless:latest",
-                            "uncompressed_size_mb": 16000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.16.x",
-                            "image": "macchiato23/kasm-development:develop",
-                            "uncompressed_size_mb": 5040,
-                            "available_tags": [
-                                "develop"
-                            ]
-                        }
-                    ],
-                    "run_config": {
-                        "privileged": true
-                    }
-                }
-            },
-            {
-                "ParrotOS 7": {
-                    "friendly_name": "Parrot OS 7",
-                    "image_src": "parrot-os.png",
-                    "description": "Parrot OS 7 desktop for Kasm Workspaces",
-                    "cores": 2,
-                    "memory": 5200,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "categories": [
-                        "Development",
-                        "Desktop"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "name": "macchiato23/kasm-parrotos-7:latest",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "macchiato23/kasm-parrotos-7:latest",
-                            "uncompressed_size_mb": 16000,
-                            "available_tags": [
-                                "develop",
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.17.x",
-                            "image": "macchiato23/kasm-parrotos-7:latest",
-                            "uncompressed_size_mb": 16000,
-                            "available_tags": [
-                                "develop",
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.16.x",
-                            "image": "macchiato23/kasm-development:develop",
-                            "uncompressed_size_mb": 5040,
-                            "available_tags": [
-                                "develop"
-                            ]
-                        }
-                    ],
-                    "run_config": {
-                        "privileged": true,
-                        "hostname": "kasm",
-                        "user": "root"
-                    },
-                    "exec_config": {
-                        "first_launch": {
-                            "user": "root",
-                            "cmd": "bash -c '/usr/bin/desktop_ready && apt-get update && apt-get install -y sudo && echo \"kasm-user  ALL=(ALL) NOPASSWD: ALL\" >> /etc/sudoers'"
-                        }
-                    }
-                }
-            },
-            {
-                "Tailscale VPN": {
-                    "friendly_name": "Tailscale VPN",
-                    "image_src": "tailscale-vpn.png",
-                    "description": "Best VPN Service for secure networks",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "categories": [
-                        "Privacy"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "name": "macchiato23/kasm-tailscalevpn:develop",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "macchiato23/kasm-tailscalevpn:develop",
-                            "uncompressed_size_mb": 3350,
-                            "available_tags": [
-                                "develop"
-                            ]
-                        },
-                        {
-                            "version": "1.17.x",
-                            "image": "macchiato23/kasm-tailscalevpn:develop",
-                            "uncompressed_size_mb": 3350,
-                            "available_tags": [
-                                "develop"
-                            ]
-                        },
-                        {
-                            "version": "1.16.x",
-                            "image": "macchiato23/kasm-tailscalevpn:develop",
-                            "uncompressed_size_mb": 3350,
-                            "available_tags": [
-                                "develop"
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
-    },
-    "double16/kasm-workspaces": {
-        "github_pages": "https://double16.github.io/kasm-workspaces/",
-        "stars": 2,
-        "last_commit": "2026-06-04T09:38:26Z",
-        "workspaces": [
-            {
-                "Bloodhound": {
-                    "friendly_name": "BloodHound",
-                    "description": "BloodHound uses graph theory to reveal the hidden and often unintended relationships within an Active Directory or Azure environment.",
-                    "image_src": "bloodhound.svg",
-                    "allow_network_selection": true,
-                    "cores": 2,
-                    "memory": 2048,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Shares",
-                    "docker_registry": "https://public.ecr.aws/bramblethorn",
-                    "name": "public.ecr.aws/bramblethorn/kasm/bloodhound:1.18.0-rolling-weekly",
-                    "categories": [
-                        "Desktop",
-                        "Security"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "notes": "The container provides an ephemeral environment. Credentials are admin:admin.",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "public.ecr.aws/bramblethorn/kasm/bloodhound:1.18.0-rolling-weekly",
-                            "uncompressed_size_mb": 6000,
-                            "available_tags": [
-                                "1.18.0-rolling-weekly",
-                                "v8.7.0",
-                                "v9.2.2"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "IDEA": {
-                    "friendly_name": "IntelliJ IDEA Ultimate",
-                    "description": "The leading IDE for professional development in Java and Kotlin.",
-                    "image_src": "intellij-idea.svg",
-                    "cores": 1,
-                    "memory": 2048,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Shares",
-                    "docker_registry": "https://public.ecr.aws/bramblethorn",
-                    "name": "public.ecr.aws/bramblethorn/kasm/idea:1.18.0-rolling-weekly",
-                    "categories": [
-                        "Desktop",
-                        "Development"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "notes": "",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "public.ecr.aws/bramblethorn/kasm/idea:1.18.0-rolling-weekly",
-                            "uncompressed_size_mb": 8000,
-                            "available_tags": [
-                                "1.18.0-rolling-weekly",
-                                "2025.3.2"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "Kali-lowmem": {
-                    "friendly_name": "Kali Linux BT lowmem",
-                    "image_src": "kali.png",
-                    "description": "Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing.",
-                    "run_config": {
-                        "hostname": "kali",
-                        "privileged": true,
-                        "cap_add": [
-                            "NET_ADMIN",
-                            "CAP_SYS_ADMIN"
-                        ],
-                        "devices": [
-                            "/dev/net/tun"
-                        ]
-                    },
-                    "exec_config": {
-                        "first_launch": {
-                            "user": "root",
-                            "privileged": true,
-                            "cmd": "/dockerstartup/alternate-gateway.sh"
-                        }
-                    },
-                    "allow_network_selection": true,
-                    "cores": 1,
-                    "memory": 1536,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Shares",
-                    "docker_registry": "https://public.ecr.aws/bramblethorn",
-                    "name": "public.ecr.aws/bramblethorn/kasm/kali:1.18.0-rolling-weekly",
-                    "categories": [
-                        "Desktop",
-                        "Security",
-                        "Development"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "notes": "This low memory workspace is allocated 1536MB of RAM.\n\nThis Kali workspace extends the Kasm Kali workspace as follows:\n  - password-less sudo\n  - more packages including Burp Suite Pro, Postman, ZAP weekly, Caido\n  - VPN sidecar support when the VPN network device is bound to x.x.x.2\n\nIf a network is selected where the x.x.x.2 address is a gateway, traffic will be routed through it. This allows a VPN to run as a container and be shared across containers.",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "public.ecr.aws/bramblethorn/kasm/kali:1.18.0-rolling-weekly",
-                            "uncompressed_size_mb": 30000,
-                            "available_tags": [
-                                "1.18.0-rolling-weekly"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "Kali": {
-                    "friendly_name": "Kali Linux BT",
-                    "image_src": "kali.png",
-                    "description": "Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing.",
-                    "run_config": {
-                        "hostname": "kali",
-                        "privileged": true,
-                        "cap_add": [
-                            "NET_ADMIN",
-                            "CAP_SYS_ADMIN"
-                        ],
-                        "devices": [
-                            "/dev/net/tun"
-                        ]
-                    },
-                    "exec_config": {
-                        "first_launch": {
-                            "user": "root",
-                            "privileged": true,
-                            "cmd": "/dockerstartup/alternate-gateway.sh"
-                        }
-                    },
-                    "allow_network_selection": true,
-                    "cores": 2,
-                    "memory": 4096,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Shares",
-                    "docker_registry": "https://public.ecr.aws/bramblethorn",
-                    "name": "public.ecr.aws/bramblethorn/kasm/kali:1.18.0-rolling-weekly",
-                    "categories": [
-                        "Desktop",
-                        "Security",
-                        "Development"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "notes": "This Kali workspace extends the Kasm Kali workspace as follows:\n  - password-less sudo\n  - more packages including Burp Suite Pro, Postman, ZAP weekly, Caido\n  - VPN sidecar support when the VPN network device is bound to x.x.x.2\n\nIf a network is selected where the x.x.x.2 address is a gateway, traffic will be routed through it. This allows a VPN to run as a container and be shared across containers.",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "public.ecr.aws/bramblethorn/kasm/kali:1.18.0-rolling-weekly",
-                            "uncompressed_size_mb": 30000,
-                            "available_tags": [
-                                "1.18.0-rolling-weekly"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "Parrot-lowmem": {
-                    "friendly_name": "Parrot OS BT lowmem",
-                    "image_src": "parrotos.svg",
-                    "description": "Parrot OS is a Linux distribution based on Debian with a focus on security, privacy, and development.",
-                    "run_config": {
-                        "hostname": "parrot",
-                        "privileged": true,
-                        "cap_add": [
-                            "NET_ADMIN",
-                            "CAP_SYS_ADMIN"
-                        ],
-                        "devices": [
-                            "/dev/net/tun"
-                        ]
-                    },
-                    "exec_config": {
-                        "first_launch": {
-                            "user": "root",
-                            "privileged": true,
-                            "cmd": "/dockerstartup/alternate-gateway.sh"
-                        }
-                    },
-                    "allow_network_selection": true,
-                    "cores": 1,
-                    "memory": 1536,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Shares",
-                    "docker_registry": "https://public.ecr.aws/bramblethorn",
-                    "name": "public.ecr.aws/bramblethorn/kasm/parrot:1.18.0-rolling-weekly",
-                    "categories": [
-                        "Desktop",
-                        "Development",
-                        "Security"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "notes": "This low memory workspace is allocated 1536MB of RAM.\n\nThis Parrot workspace extends the Kasm Parrot workspace as follows:\n  - password-less sudo\n  - more packages including Burp Suite Pro, Postman, ZAP weekly, Caido\n  - VPN sidecar support when the VPN network device is bound to x.x.x.2\n\nIf a network is selected where the x.x.x.2 address is a gateway, traffic will be routed through it. This allows a VPN to run as a container and be shared across containers.",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "public.ecr.aws/bramblethorn/kasm/parrot:1.18.0-rolling-weekly",
-                            "uncompressed_size_mb": 42300,
-                            "available_tags": [
-                                "1.18.0-rolling-weekly"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "Parrot": {
-                    "friendly_name": "Parrot OS BT",
-                    "image_src": "parrotos.svg",
-                    "description": "Parrot OS is a Linux distribution based on Debian with a focus on security, privacy, and development.",
-                    "run_config": {
-                        "hostname": "parrot",
-                        "privileged": true,
-                        "cap_add": [
-                            "NET_ADMIN",
-                            "CAP_SYS_ADMIN"
-                        ],
-                        "devices": [
-                            "/dev/net/tun"
-                        ]
-                    },
-                    "exec_config": {
-                        "first_launch": {
-                            "user": "root",
-                            "privileged": true,
-                            "cmd": "/dockerstartup/alternate-gateway.sh"
-                        }
-                    },
-                    "allow_network_selection": true,
-                    "cores": 2,
-                    "memory": 4096,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Shares",
-                    "docker_registry": "https://public.ecr.aws/bramblethorn",
-                    "name": "public.ecr.aws/bramblethorn/kasm/parrot:1.18.0-rolling-weekly",
-                    "categories": [
-                        "Desktop",
-                        "Development",
-                        "Security"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "notes": "This Parrot workspace extends the Kasm Parrot workspace as follows:\n  - password-less sudo\n  - more packages including Burp Suite Pro, Postman, ZAP weekly, Caido\n  - VPN sidecar support when the VPN network device is bound to x.x.x.2\n\nIf a network is selected where the x.x.x.2 address is a gateway, traffic will be routed through it. This allows a VPN to run as a container and be shared across containers.",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "public.ecr.aws/bramblethorn/kasm/parrot:1.18.0-rolling-weekly",
-                            "uncompressed_size_mb": 42300,
-                            "available_tags": [
-                                "1.18.0-rolling-weekly"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "Terminal": {
-                    "friendly_name": "Terminal BT",
-                    "image_src": "terminal.png",
-                    "description": "Xfce Terminal is a lightweight and easy to use terminal emulator application with many advanced features including drop down, tabs, unlimited scrolling, full colors, fonts, transparent backgrounds, and more.",
-                    "cores": 0.25,
-                    "memory": 768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Shares",
-                    "docker_registry": "https://public.ecr.aws/bramblethorn",
-                    "categories": [],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "run_config": {
-                        "hostname": "kasm",
-                        "environment": {
-                            "TERMINAL_ARGS": "--fullscreen --hide-borders --hide-menubar --zoom=-1 --hide-scrollbar"
-                        }
-                    },
-                    "exec_config": {
-                        "first_launch": {
-                            "user": "root",
-                            "privileged": true,
-                            "cmd": "/dockerstartup/alternate-gateway.sh"
-                        }
-                    },
-                    "allow_network_selection": true,
-                    "notes": "This Terminal workspace extends the Kasm Terminal workspace as follows:\n  - zsh as default\n  - tmux with custom configuration\n  - VPN sidecar support when the VPN network device is bound to x.x.x.2\n\nIf a network is selected where the x.x.x.2 address is a gateway, traffic will be routed through it. This allows a VPN to run as a container and be shared across containers.",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "public.ecr.aws/bramblethorn/kasm/terminal:1.18.0-rolling-weekly",
-                            "uncompressed_size_mb": 3200,
-                            "available_tags": [
-                                "1.18.0-rolling-weekly"
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
-    },
-    "sullyschoice/kasm-registry": {
-        "github_pages": "https://sullyschoice.github.io/kasm-registry/",
-        "stars": 7,
-        "last_commit": "2026-06-01T03:40:42Z",
-        "workspaces": [
-            {
-                "AI-Toolkit": {
-                    "description": "AI Toolkit is an all in one training suite for diffusion models.",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "ai-toolkit.png",
-                    "gpu_count": 1,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "AI",
-                        "Utilities",
-                        "Multimedia"
-                    ],
-                    "friendly_name": "AI Toolkit",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-ai-toolkit:latest",
-                            "uncompressed_size_mb": 16000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-ai-toolkit:latest",
-                            "uncompressed_size_mb": 16000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-ai-toolkit:latest",
-                            "uncompressed_size_mb": 16000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "COLMAP": {
-                    "description": "COLMAP is a general-purpose Structure-from-Motion (SfM) and Multi-View Stereo (MVS) pipeline with a graphical and command-line interface.",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "colmap.png",
-                    "gpu_count": 1,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "Multimedia",
-                        "Utilities",
-                        "3D"
-                    ],
-                    "friendly_name": "COLMAP",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-colmap:latest",
-                            "uncompressed_size_mb": 17000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-colmap:latest",
-                            "uncompressed_size_mb": 17000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-colmap:latest",
-                            "uncompressed_size_mb": 17000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "ComfyUI": {
-                    "description": "The most powerful and modular visual AI engine and application.",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "comfyui.png",
-                    "gpu_count": 1,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "AI",
-                        "Utilities",
-                        "Multimedia"
-                    ],
-                    "friendly_name": "ComfyUI",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-comfyui:latest",
-                            "uncompressed_size_mb": 12800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-comfyui:latest",
-                            "uncompressed_size_mb": 12800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-comfyui:latest",
-                            "uncompressed_size_mb": 12800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "Doom3": {
-                    "description": "Doom 3 (Demo) is a sci-fi horror first-person shooter computer game developed by id Software and published by Activision",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "doom3.png",
-                    "gpu_count": 1,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "Games"
-                    ],
-                    "friendly_name": "Doom3",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-doom3:latest",
-                            "uncompressed_size_mb": 3800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-doom3:latest",
-                            "uncompressed_size_mb": 3800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-doom3:latest",
-                            "uncompressed_size_mb": 3800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "GravityMark": {
-                    "description": "GravityMark GPU Benchmark demonstrates the capabilities of modern GPUs by rendering an enormous quantity of objects in real-time, utilizing GPU acceleration.",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "gravitymark.png",
-                    "gpu_count": 1,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "Games"
-                    ],
-                    "friendly_name": "GravityMark",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-gravitymark:latest",
-                            "uncompressed_size_mb": 3800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-gravitymark:latest",
-                            "uncompressed_size_mb": 3800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-gravitymark:latest",
-                            "uncompressed_size_mb": 3800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "IW3": {
-                    "description": "Convert any 2D image/video into side-by-side 3D image/video",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "iw3.png",
-                    "gpu_count": 1,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "Multimedia",
-                        "Utilities"
-                    ],
-                    "friendly_name": "IW3",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-iw3:latest",
-                            "uncompressed_size_mb": 13800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-iw3:latest",
-                            "uncompressed_size_mb": 13800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-iw3:latest",
-                            "uncompressed_size_mb": 13800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "Kdenlive": {
-                    "description": "Free and Open Source Video Editor.",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "kdenlive.png",
-                    "gpu_count": 1,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "Multimedia",
-                        "Utilities",
-                        "Video Editing"
-                    ],
-                    "friendly_name": "Kdenlive",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-kdenlive:latest",
-                            "uncompressed_size_mb": 4500,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-kdenlive:latest",
-                            "uncompressed_size_mb": 4500,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-kdenlive:latest",
-                            "uncompressed_size_mb": 4500,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "LichtFeld-Studio": {
-                    "description": "LichtFeld-Studio is a free, open-source implementation of 3D Gaussian Splatting that pushes the boundaries of real-time rendering performance",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "ls.png",
-                    "gpu_count": 1,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "Multimedia",
-                        "Utilities",
-                        "3D"
-                    ],
-                    "friendly_name": "LichtFeld-Studio",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-lichtfeld-studio:latest",
-                            "uncompressed_size_mb": 26000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-lichtfeld-studio:latest",
-                            "uncompressed_size_mb": 26000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-lichtfeld-studio:latest",
-                            "uncompressed_size_mb": 26000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "Netryx-Astra": {
-                    "description": "State-of-the-art AI geolocation from a single image..",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "netryx-astra.png",
-                    "gpu_count": 1,
-                    "memory": 8192,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "OSINT",
-                        "AI"
-                    ],
-                    "friendly_name": "AI Toolkit",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-netryx-astra:latest",
-                            "uncompressed_size_mb": 22000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-netryx-astra:latest",
-                            "uncompressed_size_mb": 22000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-netryx-astra:latest",
-                            "uncompressed_size_mb": 22000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "OmniVoice": {
-                    "description": "OmniVoice is a state-of-the-art massively multilingual zero-shot text-to-speech model",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "omnivoice.jpg",
-                    "gpu_count": 1,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "Multimedia",
-                        "AI"
-                    ],
-                    "friendly_name": "OmniVoice",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-omnivoice:latest",
-                            "uncompressed_size_mb": 30000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-omnivoice:latest",
-                            "uncompressed_size_mb": 30000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-omnivoice:latest",
-                            "uncompressed_size_mb": 30000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "OpenArena": {
-                    "description": "OpenArena is a community-produced deathmatch FPS based on GPL idTech3 technology.",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "openarena.png",
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "Games"
-                    ],
-                    "friendly_name": "OpenArena",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-openarena:latest",
-                            "uncompressed_size_mb": 3800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-openarena:latest",
-                            "uncompressed_size_mb": 3800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-openarena:latest",
-                            "uncompressed_size_mb": 3800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "OpenClaw": {
-                    "description": "The AI that actually does things.",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "openclaw.png",
-                    "gpu_count": 0,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "AI",
-                        "Utilities"
-                    ],
-                    "friendly_name": "OpenClaw",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-openclaw:latest",
-                            "uncompressed_size_mb": 18000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-openclaw:latest",
-                            "uncompressed_size_mb": 18000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-openclaw:latest",
-                            "uncompressed_size_mb": 18000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "UT2004": {
-                    "description": "First-person arena shooter video game developed by Epic Games .",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "ut2004.png",
-                    "gpu_count": 0,
-                    "run_config": {
-                        "environment": {
-                            "DISABLE_CUSTOM_STARTUP": "1"
-                        }
-                    },
-                    "exec_config": {},
-                    "categories": [
-                        "Games"
-                    ],
-                    "friendly_name": "Unreal Tournament 2004",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unreal-tournament-2004:latest",
-                            "uncompressed_size_mb": 9700,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unreal-tournament-2004:latest",
-                            "uncompressed_size_mb": 9700,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "UT99": {
-                    "description": "Unreal Tournament is a 1999 first-person shooter game developed by Epic Games",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "ut99.png",
-                    "gpu_count": 0,
-                    "run_config": {
-                        "environment": {
-                            "DISABLE_CUSTOM_STARTUP": "1"
-                        }
-                    },
-                    "exec_config": {},
-                    "categories": [
-                        "Games"
-                    ],
-                    "friendly_name": "Unreal Tournament",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unreal-tournament-1999:latest",
-                            "uncompressed_size_mb": 4400,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unreal-tournament-1999:latest",
-                            "uncompressed_size_mb": 4400,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "Unigen-Heaven": {
-                    "description": "Heaven Benchmark is benchmarking software based on the UNIGINE Engine",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "unigen.png",
-                    "gpu_count": 1,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "Games",
-                        "Utilities"
-                    ],
-                    "friendly_name": "Unigen Heaven",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unigen-heaven:latest",
-                            "uncompressed_size_mb": 3800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unigen-heaven:latest",
-                            "uncompressed_size_mb": 3800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.19.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unigen-heaven:latest",
-                            "uncompressed_size_mb": 3800,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "unreal": {
-                    "description": "Unreal is a 1998 first-person shooter game developed by Epic Games",
-                    "docker_registry": "https://sccr.sullyschoice.net",
-                    "image_src": "unreal.png",
-                    "gpu_count": 0,
-                    "run_config": {
-                        "environment": {
-                            "DISABLE_CUSTOM_STARTUP": "1"
-                        }
-                    },
-                    "exec_config": {},
-                    "categories": [
-                        "Games"
-                    ],
-                    "friendly_name": "Unreal",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unreal:latest",
-                            "uncompressed_size_mb": 4400,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unreal:latest",
-                            "uncompressed_size_mb": 4400,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
-    },
     "jtruland/kasm-registry": {
         "github_pages": "https://jtruland.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-05-29T15:14:27Z",
+        "last_commit": "2026-06-06T02:22:20Z",
         "workspaces": [
             {
                 "Claude Code Custom": {
-                    "description": "Claude Code (custom) \u2014 Kasm desktop running the Claude Code CLI plus developer tooling: gh, docker-cli, Playwright/Chromium, Python (pip/pipx/uv/ansible), and .NET 8 SDK + pac CLI (Power Platform). The ~/.claude profile is persisted via the Kasm persistent profile volume. [Build: 2026-05-29 15:11 UTC]",
+                    "description": "Claude Code (custom) \u2014 Kasm desktop running the Claude Code CLI plus developer tooling: gh, docker-cli, Playwright/Chromium, Python (pip/pipx/uv/ansible), and .NET 8 SDK + pac CLI (Power Platform). The ~/.claude profile is persisted via the Kasm persistent profile volume. [Build: 2026-06-06 02:16 UTC]",
                     "docker_registry": "https://index.docker.io/v1/",
                     "image_src": "claude-code.png",
                     "run_config": {
@@ -1386,380 +26,10 @@
                             "uncompressed_size_mb": 6722,
                             "available_tags": [
                                 "develop",
-                                "20260529-1511"
+                                "20260606-0216"
                             ]
                         }
                     ]
-                }
-            }
-        ]
-    },
-    "ddiebold91/kasm-registry": {
-        "github_pages": "https://ddiebold91.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2026-05-25T16:29:46Z",
-        "workspaces": [
-            {
-                "ubuntu_noble_with_software": {
-                    "friendly_name": "Ubuntu Noble with Software",
-                    "image_src": "ubuntu_noble.jpg",
-                    "description": "Ubuntu 24.04 LTS (Noble Numbat) custom desktop workspace with personal tools.",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "categories": [
-                        "Desktop"
-                    ],
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "exec_config": {
-                        "go": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
-                        },
-                        "assign": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
-                        }
-                    },
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "ddiebold/customubuntunoble:05-25-2026",
-                            "uncompressed_size_mb": 2676,
-                            "available_tags": [
-                                "05-22-2026",
-                                "05-23-2026",
-                                "05-25-2026"
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
-    },
-    "martynvdijke/kasm-registry": {
-        "github_pages": "https://martynvdijke.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2026-05-21T15:09:03Z",
-        "workspaces": [
-            {
-                "Cura": {
-                    "friendly_name": "Cura",
-                    "image_src": "cura.png",
-                    "description": "Prusa Slicer",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "categories": [
-                        "Productivity"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.16.x",
-                            "image": "martynvandijke/kasm-cura:latest",
-                            "uncompressed_size_mb": 2643,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "SoundbridgeFx": {
-                    "friendly_name": "SoundbridgeFx",
-                    "image_src": "soundbridgefx.png",
-                    "description": "LedFx Spotify Sonos Proxy",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "categories": [
-                        "Multimedia"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.16.x",
-                            "image": "martynvandijke/soundbridgefx:latest",
-                            "uncompressed_size_mb": 2643,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
-    },
-    "jti989/kasm-repository": {
-        "github_pages": "https://jti989.github.io/kasm-repository/",
-        "stars": 0,
-        "last_commit": "2026-05-20T21:12:09Z",
-        "workspaces": [
-            {
-                "ADB Service": {
-                    "description": "ADB service container for installing and managing Android apps over the network.",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "adb-service.png",
-                    "run_config": {
-                        "hostname": "adbd"
-                    },
-                    "categories": [
-                        "Development",
-                        "Utility"
-                    ],
-                    "friendly_name": "ADB Service",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "notes": "Use adb -H <workspace-ip> -P 5037 from another workspace/client to connect to this daemon.",
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "gounthar/docker-adb:latest",
-                            "uncompressed_size_mb": 0,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "gounthar/docker-adb:latest",
-                            "uncompressed_size_mb": 0,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "FreeCAD": {
-                    "description": "FreeCAD is a free and open-source parametric 3D CAD modeler, designed for product design, mechanical engineering, and architecture.",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "freecad.png",
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "categories": [
-                        "Engineering",
-                        "Design"
-                    ],
-                    "friendly_name": "FreeCAD",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "linuxserver/freecad:1.1.1",
-                            "uncompressed_size_mb": 0,
-                            "available_tags": [
-                                "1.1.1",
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "linuxserver/freecad:1.1.1",
-                            "uncompressed_size_mb": 0,
-                            "available_tags": [
-                                "1.1.1",
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "Ultimaker Cura": {
-                    "description": "Ultimaker Cura is an open-source 3D printing slicer for preparing and optimizing models for printing.",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "ultimaker-cura.png",
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "categories": [
-                        "Engineering",
-                        "3D Printing"
-                    ],
-                    "friendly_name": "Ultimaker Cura",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "linuxserver/cura:5.12.1",
-                            "uncompressed_size_mb": 0,
-                            "available_tags": [
-                                "5.12.1",
-                                "latest"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "linuxserver/cura:5.12.1",
-                            "uncompressed_size_mb": 0,
-                            "available_tags": [
-                                "5.12.1",
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
-    },
-    "alove4tech/kasm-registry": {
-        "github_pages": "https://alove4tech.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2026-05-18T01:03:14Z",
-        "workspaces": [
-            {
-                "CyberChef": {
-                    "description": "CyberChef web app launched in Chromium for encoding, decoding, hashing, and data inspection on ARM64 and AMD64 Kasm deployments.",
-                    "name": "ghcr.io/alove4tech/kasm-cyberchef",
-                    "docker_registry": "https://ghcr.io",
-                    "image_src": "cyberchef.svg",
-                    "categories": [
-                        "Security",
-                        "Productivity"
-                    ],
-                    "friendly_name": "CyberChef",
-                    "cores": 2,
-                    "memory": 2048,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "exec_config": {
-                        "go": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"https://gchq.github.io/CyberChef/\"'"
-                        },
-                        "assign": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"https://gchq.github.io/CyberChef/\"'"
-                        }
-                    },
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "ghcr.io/alove4tech/kasm-cyberchef:1.17.0-rolling-daily",
-                            "uncompressed_size_mb": 2967,
-                            "available_tags": [
-                                "develop",
-                                "1.17.0",
-                                "1.17.0-rolling-weekly",
-                                "1.17.0-rolling-daily"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "ghcr.io/alove4tech/kasm-cyberchef:1.18.0-rolling-daily",
-                            "uncompressed_size_mb": 2967,
-                            "available_tags": [
-                                "develop",
-                                "1.18.0",
-                                "1.18.0-rolling-weekly",
-                                "1.18.0-rolling-daily"
-                            ]
-                        }
-                    ],
-                    "notes": "Uses a thin multi-arch wrapper image based on kasmweb/chromium so Kasm treats this as a separate installable workspace instead of the already-installed Chromium image. The wrapper image is built and published by GitHub Actions for linux/amd64 and linux/arm64.",
-                    "arch": "amd64,arm64"
-                }
-            },
-            {
-                "Discord": {
-                    "description": "Discord web app launched in Chromium for communication on ARM64 and AMD64 Kasm deployments.",
-                    "name": "ghcr.io/alove4tech/kasm-discord",
-                    "docker_registry": "https://ghcr.io",
-                    "image_src": "discord.svg",
-                    "categories": [
-                        "Communication"
-                    ],
-                    "friendly_name": "Discord",
-                    "cores": 2,
-                    "memory": 2048,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "exec_config": {
-                        "go": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"https://discord.com/app\"'"
-                        },
-                        "assign": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"https://discord.com/app\"'"
-                        }
-                    },
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "ghcr.io/alove4tech/kasm-discord:1.17.0-rolling-daily",
-                            "uncompressed_size_mb": 2967,
-                            "available_tags": [
-                                "develop",
-                                "1.17.0",
-                                "1.17.0-rolling-weekly",
-                                "1.17.0-rolling-daily"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "ghcr.io/alove4tech/kasm-discord:1.18.0-rolling-daily",
-                            "uncompressed_size_mb": 2967,
-                            "available_tags": [
-                                "develop",
-                                "1.18.0",
-                                "1.18.0-rolling-weekly",
-                                "1.18.0-rolling-daily"
-                            ]
-                        }
-                    ],
-                    "notes": "Uses a thin multi-arch wrapper image based on kasmweb/chromium so Kasm treats this as a separate installable workspace instead of the already-installed Chromium image. The wrapper image is built and published by GitHub Actions for linux/amd64 and linux/arm64.",
-                    "arch": "amd64,arm64"
                 }
             }
         ]
@@ -1767,7 +37,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-06-05T14:18:17Z",
+        "last_commit": "2026-06-06T13:03:21Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -3318,6 +1588,49 @@
                 }
             },
             {
+                "Ghidra 12.1.2": {
+                    "friendly_name": "Ghidra 12.1.2",
+                    "description": "Ghidra reverse engineering suite",
+                    "docker_registry": "https://ghcr.io/",
+                    "image_src": "icon.png",
+                    "gpu_count": 0,
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "run_config": {
+                        "security_opt": [
+                            "seccomp=unconfined"
+                        ],
+                        "user": 1000,
+                        "environment": {
+                            "HOME": "/home/kasm-user"
+                        }
+                    },
+                    "categories": [
+                        "Security"
+                    ],
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "ghcr.io/sourcediver42/kasm-registry/ghidra-12.1.2:1.17",
+                            "available_tags": [
+                                "1.17"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/sourcediver42/kasm-registry/ghidra-12.1.2:1.18",
+                            "available_tags": [
+                                "1.18"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
                 "Ghidra 12.1": {
                     "friendly_name": "Ghidra 12.1",
                     "description": "Ghidra reverse engineering suite",
@@ -3358,6 +1671,1736 @@
                             ]
                         }
                     ]
+                }
+            }
+        ]
+    },
+    "dcat23/kasm-registry": {
+        "github_pages": "https://dcat23.github.io/kasm-registry/",
+        "stars": 1,
+        "last_commit": "2026-06-05T12:29:18Z",
+        "workspaces": [
+            {
+                "Amnesia Desktop": {
+                    "friendly_name": "Amnesia Desktop",
+                    "image_src": "amnesia-desktop.jpg",
+                    "description": "Ephemeral, privacy-first desktop inspired by Tails. Includes Tor Browser, Thunderbird with OpenPGP, KeePassXC, GnuPG, MAT2, OnionShare, LibreOffice, and torsocks for anonymous CLI workflows. Sessions leave no persistent traces by default.",
+                    "cores": 2,
+                    "memory": 5200,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "categories": [
+                        "Desktop",
+                        "Security"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "name": "macchiato23/kasm-amnesia-desktop:latest",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "macchiato23/kasm-amnesia-desktop:latest",
+                            "uncompressed_size_mb": 8000,
+                            "available_tags": [
+                                "develop",
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "macchiato23/kasm-amnesia-desktop:latest",
+                            "uncompressed_size_mb": 8000,
+                            "available_tags": [
+                                "develop",
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Java Development": {
+                    "friendly_name": "Java Development",
+                    "image_src": "java-development.png",
+                    "description": "Tools and editors for java based development environment. ",
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "categories": [
+                        "Development",
+                        "Desktop"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "name": "macchiato23/kasm-development:latest",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "macchiato23/kasm-development:latest",
+                            "uncompressed_size_mb": 4660,
+                            "available_tags": [
+                                "develop",
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "macchiato23/kasm-development:latest",
+                            "uncompressed_size_mb": 4660,
+                            "available_tags": [
+                                "develop",
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.16.x",
+                            "image": "macchiato23/kasm-development:develop",
+                            "uncompressed_size_mb": 5040,
+                            "available_tags": [
+                                "develop"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "LM Studio": {
+                    "friendly_name": "LM Studio",
+                    "image_src": "lm-studio.jpg",
+                    "description": "Tools and editors for java based development environment. ",
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "categories": [
+                        "Development",
+                        "Desktop"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "name": "macchiato23/kasm-lm-studio:latest",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "macchiato23/kasm-lm-studio:latest",
+                            "uncompressed_size_mb": 4660,
+                            "available_tags": [
+                                "develop",
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "macchiato23/kasm-lm-studio:latest",
+                            "uncompressed_size_mb": 4660,
+                            "available_tags": [
+                                "develop",
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "ParrotOS 7 Rootless": {
+                    "friendly_name": "Parrot OS 7 (rootless)",
+                    "image_src": "parrot-os.png",
+                    "description": "Parrot OS 7 rootless desktop for Kasm Workspaces",
+                    "cores": 2,
+                    "memory": 5200,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "categories": [
+                        "Development",
+                        "Desktop"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "name": "macchiato23/kasm-parrotos-7-rootless:latest",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "macchiato23/kasm-parrotos-7-rootless:latest",
+                            "uncompressed_size_mb": 16000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "macchiato23/kasm-parrotos-7-rootless:latest",
+                            "uncompressed_size_mb": 16000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.16.x",
+                            "image": "macchiato23/kasm-development:develop",
+                            "uncompressed_size_mb": 5040,
+                            "available_tags": [
+                                "develop"
+                            ]
+                        }
+                    ],
+                    "run_config": {
+                        "privileged": true
+                    }
+                }
+            },
+            {
+                "ParrotOS 7": {
+                    "friendly_name": "Parrot OS 7",
+                    "image_src": "parrot-os.png",
+                    "description": "Parrot OS 7 desktop for Kasm Workspaces",
+                    "cores": 2,
+                    "memory": 5200,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "categories": [
+                        "Development",
+                        "Desktop"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "name": "macchiato23/kasm-parrotos-7:latest",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "macchiato23/kasm-parrotos-7:latest",
+                            "uncompressed_size_mb": 16000,
+                            "available_tags": [
+                                "develop",
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "macchiato23/kasm-parrotos-7:latest",
+                            "uncompressed_size_mb": 16000,
+                            "available_tags": [
+                                "develop",
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.16.x",
+                            "image": "macchiato23/kasm-development:develop",
+                            "uncompressed_size_mb": 5040,
+                            "available_tags": [
+                                "develop"
+                            ]
+                        }
+                    ],
+                    "run_config": {
+                        "privileged": true,
+                        "hostname": "kasm",
+                        "user": "root"
+                    },
+                    "exec_config": {
+                        "first_launch": {
+                            "user": "root",
+                            "cmd": "bash -c '/usr/bin/desktop_ready && apt-get update && apt-get install -y sudo && echo \"kasm-user  ALL=(ALL) NOPASSWD: ALL\" >> /etc/sudoers'"
+                        }
+                    }
+                }
+            },
+            {
+                "Tailscale VPN": {
+                    "friendly_name": "Tailscale VPN",
+                    "image_src": "tailscale-vpn.png",
+                    "description": "Best VPN Service for secure networks",
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "categories": [
+                        "Privacy"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "name": "macchiato23/kasm-tailscalevpn:develop",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "macchiato23/kasm-tailscalevpn:develop",
+                            "uncompressed_size_mb": 3350,
+                            "available_tags": [
+                                "develop"
+                            ]
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "macchiato23/kasm-tailscalevpn:develop",
+                            "uncompressed_size_mb": 3350,
+                            "available_tags": [
+                                "develop"
+                            ]
+                        },
+                        {
+                            "version": "1.16.x",
+                            "image": "macchiato23/kasm-tailscalevpn:develop",
+                            "uncompressed_size_mb": 3350,
+                            "available_tags": [
+                                "develop"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "double16/kasm-workspaces": {
+        "github_pages": "https://double16.github.io/kasm-workspaces/",
+        "stars": 2,
+        "last_commit": "2026-06-04T09:38:26Z",
+        "workspaces": [
+            {
+                "Bloodhound": {
+                    "friendly_name": "BloodHound",
+                    "description": "BloodHound uses graph theory to reveal the hidden and often unintended relationships within an Active Directory or Azure environment.",
+                    "image_src": "bloodhound.svg",
+                    "allow_network_selection": true,
+                    "cores": 2,
+                    "memory": 2048,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Shares",
+                    "docker_registry": "https://public.ecr.aws/bramblethorn",
+                    "name": "public.ecr.aws/bramblethorn/kasm/bloodhound:1.18.0-rolling-weekly",
+                    "categories": [
+                        "Desktop",
+                        "Security"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "notes": "The container provides an ephemeral environment. Credentials are admin:admin.",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "public.ecr.aws/bramblethorn/kasm/bloodhound:1.18.0-rolling-weekly",
+                            "uncompressed_size_mb": 6000,
+                            "available_tags": [
+                                "1.18.0-rolling-weekly",
+                                "v8.7.0",
+                                "v9.2.2"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "IDEA": {
+                    "friendly_name": "IntelliJ IDEA Ultimate",
+                    "description": "The leading IDE for professional development in Java and Kotlin.",
+                    "image_src": "intellij-idea.svg",
+                    "cores": 1,
+                    "memory": 2048,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Shares",
+                    "docker_registry": "https://public.ecr.aws/bramblethorn",
+                    "name": "public.ecr.aws/bramblethorn/kasm/idea:1.18.0-rolling-weekly",
+                    "categories": [
+                        "Desktop",
+                        "Development"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "notes": "",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "public.ecr.aws/bramblethorn/kasm/idea:1.18.0-rolling-weekly",
+                            "uncompressed_size_mb": 8000,
+                            "available_tags": [
+                                "1.18.0-rolling-weekly",
+                                "2025.3.2"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Kali-lowmem": {
+                    "friendly_name": "Kali Linux BT lowmem",
+                    "image_src": "kali.png",
+                    "description": "Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing.",
+                    "run_config": {
+                        "hostname": "kali",
+                        "privileged": true,
+                        "cap_add": [
+                            "NET_ADMIN",
+                            "CAP_SYS_ADMIN"
+                        ],
+                        "devices": [
+                            "/dev/net/tun"
+                        ]
+                    },
+                    "exec_config": {
+                        "first_launch": {
+                            "user": "root",
+                            "privileged": true,
+                            "cmd": "/dockerstartup/alternate-gateway.sh"
+                        }
+                    },
+                    "allow_network_selection": true,
+                    "cores": 1,
+                    "memory": 1536,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Shares",
+                    "docker_registry": "https://public.ecr.aws/bramblethorn",
+                    "name": "public.ecr.aws/bramblethorn/kasm/kali:1.18.0-rolling-weekly",
+                    "categories": [
+                        "Desktop",
+                        "Security",
+                        "Development"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "notes": "This low memory workspace is allocated 1536MB of RAM.\n\nThis Kali workspace extends the Kasm Kali workspace as follows:\n  - password-less sudo\n  - more packages including Burp Suite Pro, Postman, ZAP weekly, Caido\n  - VPN sidecar support when the VPN network device is bound to x.x.x.2\n\nIf a network is selected where the x.x.x.2 address is a gateway, traffic will be routed through it. This allows a VPN to run as a container and be shared across containers.",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "public.ecr.aws/bramblethorn/kasm/kali:1.18.0-rolling-weekly",
+                            "uncompressed_size_mb": 30000,
+                            "available_tags": [
+                                "1.18.0-rolling-weekly"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Kali": {
+                    "friendly_name": "Kali Linux BT",
+                    "image_src": "kali.png",
+                    "description": "Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing.",
+                    "run_config": {
+                        "hostname": "kali",
+                        "privileged": true,
+                        "cap_add": [
+                            "NET_ADMIN",
+                            "CAP_SYS_ADMIN"
+                        ],
+                        "devices": [
+                            "/dev/net/tun"
+                        ]
+                    },
+                    "exec_config": {
+                        "first_launch": {
+                            "user": "root",
+                            "privileged": true,
+                            "cmd": "/dockerstartup/alternate-gateway.sh"
+                        }
+                    },
+                    "allow_network_selection": true,
+                    "cores": 2,
+                    "memory": 4096,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Shares",
+                    "docker_registry": "https://public.ecr.aws/bramblethorn",
+                    "name": "public.ecr.aws/bramblethorn/kasm/kali:1.18.0-rolling-weekly",
+                    "categories": [
+                        "Desktop",
+                        "Security",
+                        "Development"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "notes": "This Kali workspace extends the Kasm Kali workspace as follows:\n  - password-less sudo\n  - more packages including Burp Suite Pro, Postman, ZAP weekly, Caido\n  - VPN sidecar support when the VPN network device is bound to x.x.x.2\n\nIf a network is selected where the x.x.x.2 address is a gateway, traffic will be routed through it. This allows a VPN to run as a container and be shared across containers.",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "public.ecr.aws/bramblethorn/kasm/kali:1.18.0-rolling-weekly",
+                            "uncompressed_size_mb": 30000,
+                            "available_tags": [
+                                "1.18.0-rolling-weekly"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Parrot-lowmem": {
+                    "friendly_name": "Parrot OS BT lowmem",
+                    "image_src": "parrotos.svg",
+                    "description": "Parrot OS is a Linux distribution based on Debian with a focus on security, privacy, and development.",
+                    "run_config": {
+                        "hostname": "parrot",
+                        "privileged": true,
+                        "cap_add": [
+                            "NET_ADMIN",
+                            "CAP_SYS_ADMIN"
+                        ],
+                        "devices": [
+                            "/dev/net/tun"
+                        ]
+                    },
+                    "exec_config": {
+                        "first_launch": {
+                            "user": "root",
+                            "privileged": true,
+                            "cmd": "/dockerstartup/alternate-gateway.sh"
+                        }
+                    },
+                    "allow_network_selection": true,
+                    "cores": 1,
+                    "memory": 1536,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Shares",
+                    "docker_registry": "https://public.ecr.aws/bramblethorn",
+                    "name": "public.ecr.aws/bramblethorn/kasm/parrot:1.18.0-rolling-weekly",
+                    "categories": [
+                        "Desktop",
+                        "Development",
+                        "Security"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "notes": "This low memory workspace is allocated 1536MB of RAM.\n\nThis Parrot workspace extends the Kasm Parrot workspace as follows:\n  - password-less sudo\n  - more packages including Burp Suite Pro, Postman, ZAP weekly, Caido\n  - VPN sidecar support when the VPN network device is bound to x.x.x.2\n\nIf a network is selected where the x.x.x.2 address is a gateway, traffic will be routed through it. This allows a VPN to run as a container and be shared across containers.",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "public.ecr.aws/bramblethorn/kasm/parrot:1.18.0-rolling-weekly",
+                            "uncompressed_size_mb": 42300,
+                            "available_tags": [
+                                "1.18.0-rolling-weekly"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Parrot": {
+                    "friendly_name": "Parrot OS BT",
+                    "image_src": "parrotos.svg",
+                    "description": "Parrot OS is a Linux distribution based on Debian with a focus on security, privacy, and development.",
+                    "run_config": {
+                        "hostname": "parrot",
+                        "privileged": true,
+                        "cap_add": [
+                            "NET_ADMIN",
+                            "CAP_SYS_ADMIN"
+                        ],
+                        "devices": [
+                            "/dev/net/tun"
+                        ]
+                    },
+                    "exec_config": {
+                        "first_launch": {
+                            "user": "root",
+                            "privileged": true,
+                            "cmd": "/dockerstartup/alternate-gateway.sh"
+                        }
+                    },
+                    "allow_network_selection": true,
+                    "cores": 2,
+                    "memory": 4096,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Shares",
+                    "docker_registry": "https://public.ecr.aws/bramblethorn",
+                    "name": "public.ecr.aws/bramblethorn/kasm/parrot:1.18.0-rolling-weekly",
+                    "categories": [
+                        "Desktop",
+                        "Development",
+                        "Security"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "notes": "This Parrot workspace extends the Kasm Parrot workspace as follows:\n  - password-less sudo\n  - more packages including Burp Suite Pro, Postman, ZAP weekly, Caido\n  - VPN sidecar support when the VPN network device is bound to x.x.x.2\n\nIf a network is selected where the x.x.x.2 address is a gateway, traffic will be routed through it. This allows a VPN to run as a container and be shared across containers.",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "public.ecr.aws/bramblethorn/kasm/parrot:1.18.0-rolling-weekly",
+                            "uncompressed_size_mb": 42300,
+                            "available_tags": [
+                                "1.18.0-rolling-weekly"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Terminal": {
+                    "friendly_name": "Terminal BT",
+                    "image_src": "terminal.png",
+                    "description": "Xfce Terminal is a lightweight and easy to use terminal emulator application with many advanced features including drop down, tabs, unlimited scrolling, full colors, fonts, transparent backgrounds, and more.",
+                    "cores": 0.25,
+                    "memory": 768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Shares",
+                    "docker_registry": "https://public.ecr.aws/bramblethorn",
+                    "categories": [],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "run_config": {
+                        "hostname": "kasm",
+                        "environment": {
+                            "TERMINAL_ARGS": "--fullscreen --hide-borders --hide-menubar --zoom=-1 --hide-scrollbar"
+                        }
+                    },
+                    "exec_config": {
+                        "first_launch": {
+                            "user": "root",
+                            "privileged": true,
+                            "cmd": "/dockerstartup/alternate-gateway.sh"
+                        }
+                    },
+                    "allow_network_selection": true,
+                    "notes": "This Terminal workspace extends the Kasm Terminal workspace as follows:\n  - zsh as default\n  - tmux with custom configuration\n  - VPN sidecar support when the VPN network device is bound to x.x.x.2\n\nIf a network is selected where the x.x.x.2 address is a gateway, traffic will be routed through it. This allows a VPN to run as a container and be shared across containers.",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "public.ecr.aws/bramblethorn/kasm/terminal:1.18.0-rolling-weekly",
+                            "uncompressed_size_mb": 3200,
+                            "available_tags": [
+                                "1.18.0-rolling-weekly"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "sullyschoice/kasm-registry": {
+        "github_pages": "https://sullyschoice.github.io/kasm-registry/",
+        "stars": 7,
+        "last_commit": "2026-06-01T03:40:42Z",
+        "workspaces": [
+            {
+                "AI-Toolkit": {
+                    "description": "AI Toolkit is an all in one training suite for diffusion models.",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "ai-toolkit.png",
+                    "gpu_count": 1,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "AI",
+                        "Utilities",
+                        "Multimedia"
+                    ],
+                    "friendly_name": "AI Toolkit",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-ai-toolkit:latest",
+                            "uncompressed_size_mb": 16000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-ai-toolkit:latest",
+                            "uncompressed_size_mb": 16000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-ai-toolkit:latest",
+                            "uncompressed_size_mb": 16000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "COLMAP": {
+                    "description": "COLMAP is a general-purpose Structure-from-Motion (SfM) and Multi-View Stereo (MVS) pipeline with a graphical and command-line interface.",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "colmap.png",
+                    "gpu_count": 1,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "Multimedia",
+                        "Utilities",
+                        "3D"
+                    ],
+                    "friendly_name": "COLMAP",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-colmap:latest",
+                            "uncompressed_size_mb": 17000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-colmap:latest",
+                            "uncompressed_size_mb": 17000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-colmap:latest",
+                            "uncompressed_size_mb": 17000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "ComfyUI": {
+                    "description": "The most powerful and modular visual AI engine and application.",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "comfyui.png",
+                    "gpu_count": 1,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "AI",
+                        "Utilities",
+                        "Multimedia"
+                    ],
+                    "friendly_name": "ComfyUI",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-comfyui:latest",
+                            "uncompressed_size_mb": 12800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-comfyui:latest",
+                            "uncompressed_size_mb": 12800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-comfyui:latest",
+                            "uncompressed_size_mb": 12800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Doom3": {
+                    "description": "Doom 3 (Demo) is a sci-fi horror first-person shooter computer game developed by id Software and published by Activision",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "doom3.png",
+                    "gpu_count": 1,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "Games"
+                    ],
+                    "friendly_name": "Doom3",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-doom3:latest",
+                            "uncompressed_size_mb": 3800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-doom3:latest",
+                            "uncompressed_size_mb": 3800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-doom3:latest",
+                            "uncompressed_size_mb": 3800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "GravityMark": {
+                    "description": "GravityMark GPU Benchmark demonstrates the capabilities of modern GPUs by rendering an enormous quantity of objects in real-time, utilizing GPU acceleration.",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "gravitymark.png",
+                    "gpu_count": 1,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "Games"
+                    ],
+                    "friendly_name": "GravityMark",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-gravitymark:latest",
+                            "uncompressed_size_mb": 3800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-gravitymark:latest",
+                            "uncompressed_size_mb": 3800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-gravitymark:latest",
+                            "uncompressed_size_mb": 3800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "IW3": {
+                    "description": "Convert any 2D image/video into side-by-side 3D image/video",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "iw3.png",
+                    "gpu_count": 1,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "Multimedia",
+                        "Utilities"
+                    ],
+                    "friendly_name": "IW3",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-iw3:latest",
+                            "uncompressed_size_mb": 13800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-iw3:latest",
+                            "uncompressed_size_mb": 13800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-iw3:latest",
+                            "uncompressed_size_mb": 13800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Kdenlive": {
+                    "description": "Free and Open Source Video Editor.",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "kdenlive.png",
+                    "gpu_count": 1,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "Multimedia",
+                        "Utilities",
+                        "Video Editing"
+                    ],
+                    "friendly_name": "Kdenlive",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-kdenlive:latest",
+                            "uncompressed_size_mb": 4500,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-kdenlive:latest",
+                            "uncompressed_size_mb": 4500,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-kdenlive:latest",
+                            "uncompressed_size_mb": 4500,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "LichtFeld-Studio": {
+                    "description": "LichtFeld-Studio is a free, open-source implementation of 3D Gaussian Splatting that pushes the boundaries of real-time rendering performance",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "ls.png",
+                    "gpu_count": 1,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "Multimedia",
+                        "Utilities",
+                        "3D"
+                    ],
+                    "friendly_name": "LichtFeld-Studio",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-lichtfeld-studio:latest",
+                            "uncompressed_size_mb": 26000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-lichtfeld-studio:latest",
+                            "uncompressed_size_mb": 26000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-lichtfeld-studio:latest",
+                            "uncompressed_size_mb": 26000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Netryx-Astra": {
+                    "description": "State-of-the-art AI geolocation from a single image..",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "netryx-astra.png",
+                    "gpu_count": 1,
+                    "memory": 8192,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "OSINT",
+                        "AI"
+                    ],
+                    "friendly_name": "AI Toolkit",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-netryx-astra:latest",
+                            "uncompressed_size_mb": 22000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-netryx-astra:latest",
+                            "uncompressed_size_mb": 22000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-netryx-astra:latest",
+                            "uncompressed_size_mb": 22000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "OmniVoice": {
+                    "description": "OmniVoice is a state-of-the-art massively multilingual zero-shot text-to-speech model",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "omnivoice.jpg",
+                    "gpu_count": 1,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "Multimedia",
+                        "AI"
+                    ],
+                    "friendly_name": "OmniVoice",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-omnivoice:latest",
+                            "uncompressed_size_mb": 30000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-omnivoice:latest",
+                            "uncompressed_size_mb": 30000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-omnivoice:latest",
+                            "uncompressed_size_mb": 30000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "OpenArena": {
+                    "description": "OpenArena is a community-produced deathmatch FPS based on GPL idTech3 technology.",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "openarena.png",
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "Games"
+                    ],
+                    "friendly_name": "OpenArena",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-openarena:latest",
+                            "uncompressed_size_mb": 3800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-openarena:latest",
+                            "uncompressed_size_mb": 3800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-openarena:latest",
+                            "uncompressed_size_mb": 3800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "OpenClaw": {
+                    "description": "The AI that actually does things.",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "openclaw.png",
+                    "gpu_count": 0,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "AI",
+                        "Utilities"
+                    ],
+                    "friendly_name": "OpenClaw",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-openclaw:latest",
+                            "uncompressed_size_mb": 18000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-openclaw:latest",
+                            "uncompressed_size_mb": 18000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-openclaw:latest",
+                            "uncompressed_size_mb": 18000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "UT2004": {
+                    "description": "First-person arena shooter video game developed by Epic Games .",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "ut2004.png",
+                    "gpu_count": 0,
+                    "run_config": {
+                        "environment": {
+                            "DISABLE_CUSTOM_STARTUP": "1"
+                        }
+                    },
+                    "exec_config": {},
+                    "categories": [
+                        "Games"
+                    ],
+                    "friendly_name": "Unreal Tournament 2004",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unreal-tournament-2004:latest",
+                            "uncompressed_size_mb": 9700,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unreal-tournament-2004:latest",
+                            "uncompressed_size_mb": 9700,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "UT99": {
+                    "description": "Unreal Tournament is a 1999 first-person shooter game developed by Epic Games",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "ut99.png",
+                    "gpu_count": 0,
+                    "run_config": {
+                        "environment": {
+                            "DISABLE_CUSTOM_STARTUP": "1"
+                        }
+                    },
+                    "exec_config": {},
+                    "categories": [
+                        "Games"
+                    ],
+                    "friendly_name": "Unreal Tournament",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unreal-tournament-1999:latest",
+                            "uncompressed_size_mb": 4400,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unreal-tournament-1999:latest",
+                            "uncompressed_size_mb": 4400,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Unigen-Heaven": {
+                    "description": "Heaven Benchmark is benchmarking software based on the UNIGINE Engine",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "unigen.png",
+                    "gpu_count": 1,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "Games",
+                        "Utilities"
+                    ],
+                    "friendly_name": "Unigen Heaven",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unigen-heaven:latest",
+                            "uncompressed_size_mb": 3800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unigen-heaven:latest",
+                            "uncompressed_size_mb": 3800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unigen-heaven:latest",
+                            "uncompressed_size_mb": 3800,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "unreal": {
+                    "description": "Unreal is a 1998 first-person shooter game developed by Epic Games",
+                    "docker_registry": "https://sccr.sullyschoice.net",
+                    "image_src": "unreal.png",
+                    "gpu_count": 0,
+                    "run_config": {
+                        "environment": {
+                            "DISABLE_CUSTOM_STARTUP": "1"
+                        }
+                    },
+                    "exec_config": {},
+                    "categories": [
+                        "Games"
+                    ],
+                    "friendly_name": "Unreal",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unreal:latest",
+                            "uncompressed_size_mb": 4400,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "sccr.sullyschoice.net/sullyschoice/kasm-unreal:latest",
+                            "uncompressed_size_mb": 4400,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "ddiebold91/kasm-registry": {
+        "github_pages": "https://ddiebold91.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-05-25T16:29:46Z",
+        "workspaces": [
+            {
+                "ubuntu_noble_with_software": {
+                    "friendly_name": "Ubuntu Noble with Software",
+                    "image_src": "ubuntu_noble.jpg",
+                    "description": "Ubuntu 24.04 LTS (Noble Numbat) custom desktop workspace with personal tools.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "categories": [
+                        "Desktop"
+                    ],
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+                        },
+                        "assign": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+                        }
+                    },
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "ddiebold/customubuntunoble:05-25-2026",
+                            "uncompressed_size_mb": 2676,
+                            "available_tags": [
+                                "05-22-2026",
+                                "05-23-2026",
+                                "05-25-2026"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "martynvdijke/kasm-registry": {
+        "github_pages": "https://martynvdijke.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-05-21T15:09:03Z",
+        "workspaces": [
+            {
+                "Cura": {
+                    "friendly_name": "Cura",
+                    "image_src": "cura.png",
+                    "description": "Prusa Slicer",
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "categories": [
+                        "Productivity"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.16.x",
+                            "image": "martynvandijke/kasm-cura:latest",
+                            "uncompressed_size_mb": 2643,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "SoundbridgeFx": {
+                    "friendly_name": "SoundbridgeFx",
+                    "image_src": "soundbridgefx.png",
+                    "description": "LedFx Spotify Sonos Proxy",
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "categories": [
+                        "Multimedia"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.16.x",
+                            "image": "martynvandijke/soundbridgefx:latest",
+                            "uncompressed_size_mb": 2643,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "jti989/kasm-repository": {
+        "github_pages": "https://jti989.github.io/kasm-repository/",
+        "stars": 0,
+        "last_commit": "2026-05-20T21:12:09Z",
+        "workspaces": [
+            {
+                "ADB Service": {
+                    "description": "ADB service container for installing and managing Android apps over the network.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "adb-service.png",
+                    "run_config": {
+                        "hostname": "adbd"
+                    },
+                    "categories": [
+                        "Development",
+                        "Utility"
+                    ],
+                    "friendly_name": "ADB Service",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "notes": "Use adb -H <workspace-ip> -P 5037 from another workspace/client to connect to this daemon.",
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "gounthar/docker-adb:latest",
+                            "uncompressed_size_mb": 0,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "gounthar/docker-adb:latest",
+                            "uncompressed_size_mb": 0,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "FreeCAD": {
+                    "description": "FreeCAD is a free and open-source parametric 3D CAD modeler, designed for product design, mechanical engineering, and architecture.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "freecad.png",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "categories": [
+                        "Engineering",
+                        "Design"
+                    ],
+                    "friendly_name": "FreeCAD",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "linuxserver/freecad:1.1.1",
+                            "uncompressed_size_mb": 0,
+                            "available_tags": [
+                                "1.1.1",
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "linuxserver/freecad:1.1.1",
+                            "uncompressed_size_mb": 0,
+                            "available_tags": [
+                                "1.1.1",
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Ultimaker Cura": {
+                    "description": "Ultimaker Cura is an open-source 3D printing slicer for preparing and optimizing models for printing.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "ultimaker-cura.png",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "categories": [
+                        "Engineering",
+                        "3D Printing"
+                    ],
+                    "friendly_name": "Ultimaker Cura",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "linuxserver/cura:5.12.1",
+                            "uncompressed_size_mb": 0,
+                            "available_tags": [
+                                "5.12.1",
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "linuxserver/cura:5.12.1",
+                            "uncompressed_size_mb": 0,
+                            "available_tags": [
+                                "5.12.1",
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "alove4tech/kasm-registry": {
+        "github_pages": "https://alove4tech.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-05-18T01:03:14Z",
+        "workspaces": [
+            {
+                "CyberChef": {
+                    "description": "CyberChef web app launched in Chromium for encoding, decoding, hashing, and data inspection on ARM64 and AMD64 Kasm deployments.",
+                    "name": "ghcr.io/alove4tech/kasm-cyberchef",
+                    "docker_registry": "https://ghcr.io",
+                    "image_src": "cyberchef.svg",
+                    "categories": [
+                        "Security",
+                        "Productivity"
+                    ],
+                    "friendly_name": "CyberChef",
+                    "cores": 2,
+                    "memory": 2048,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"https://gchq.github.io/CyberChef/\"'"
+                        },
+                        "assign": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"https://gchq.github.io/CyberChef/\"'"
+                        }
+                    },
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "ghcr.io/alove4tech/kasm-cyberchef:1.17.0-rolling-daily",
+                            "uncompressed_size_mb": 2967,
+                            "available_tags": [
+                                "develop",
+                                "1.17.0",
+                                "1.17.0-rolling-weekly",
+                                "1.17.0-rolling-daily"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/alove4tech/kasm-cyberchef:1.18.0-rolling-daily",
+                            "uncompressed_size_mb": 2967,
+                            "available_tags": [
+                                "develop",
+                                "1.18.0",
+                                "1.18.0-rolling-weekly",
+                                "1.18.0-rolling-daily"
+                            ]
+                        }
+                    ],
+                    "notes": "Uses a thin multi-arch wrapper image based on kasmweb/chromium so Kasm treats this as a separate installable workspace instead of the already-installed Chromium image. The wrapper image is built and published by GitHub Actions for linux/amd64 and linux/arm64.",
+                    "arch": "amd64,arm64"
+                }
+            },
+            {
+                "Discord": {
+                    "description": "Discord web app launched in Chromium for communication on ARM64 and AMD64 Kasm deployments.",
+                    "name": "ghcr.io/alove4tech/kasm-discord",
+                    "docker_registry": "https://ghcr.io",
+                    "image_src": "discord.svg",
+                    "categories": [
+                        "Communication"
+                    ],
+                    "friendly_name": "Discord",
+                    "cores": 2,
+                    "memory": 2048,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"https://discord.com/app\"'"
+                        },
+                        "assign": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"https://discord.com/app\"'"
+                        }
+                    },
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "ghcr.io/alove4tech/kasm-discord:1.17.0-rolling-daily",
+                            "uncompressed_size_mb": 2967,
+                            "available_tags": [
+                                "develop",
+                                "1.17.0",
+                                "1.17.0-rolling-weekly",
+                                "1.17.0-rolling-daily"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/alove4tech/kasm-discord:1.18.0-rolling-daily",
+                            "uncompressed_size_mb": 2967,
+                            "available_tags": [
+                                "develop",
+                                "1.18.0",
+                                "1.18.0-rolling-weekly",
+                                "1.18.0-rolling-daily"
+                            ]
+                        }
+                    ],
+                    "notes": "Uses a thin multi-arch wrapper image based on kasmweb/chromium so Kasm treats this as a separate installable workspace instead of the already-installed Chromium image. The wrapper image is built and published by GitHub Actions for linux/amd64 and linux/arm64.",
+                    "arch": "amd64,arm64"
                 }
             }
         ]
@@ -10801,80 +10844,6 @@
                         "1.14.x"
                     ],
                     "uncompressed_size_mb": 500
-                }
-            }
-        ]
-    },
-    "EligiaOfficial/Kasm-Registry": {
-        "github_pages": "https://registry.eligia.net/",
-        "stars": 0,
-        "last_commit": "2025-11-03T19:39:30Z",
-        "workspaces": [
-            {
-                "Vesktop": {
-                    "friendly_name": "Vesktop",
-                    "image_src": "vesktop.png",
-                    "description": "Vesktop is a customizable and privacy friendly Discord desktop app.",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://git.ebeli.net/v2/",
-                    "categories": [
-                        "Communication",
-                        "Games"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "git.ebeli.net/apps/vesktop:dev",
-                            "uncompressed_size_mb": 3233
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "git.ebeli.net/apps/vesktop:dev",
-                            "uncompressed_size_mb": 3233
-                        }
-                    ]
-                }
-            },
-            {
-                "Zen": {
-                    "friendly_name": "Zen Browser",
-                    "image_src": "zen.png",
-                    "description": "Zen Browser with betterfox and ublock origin.",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://git.ebeli.net/v2/",
-                    "categories": [
-                        "Browser"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "git.ebeli.net/apps/zen-browser:dev",
-                            "uncompressed_size_mb": 3653
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "git.ebeli.net/apps/zen-browser:dev",
-                            "uncompressed_size_mb": 3653
-                        }
-                    ]
                 }
             }
         ]
