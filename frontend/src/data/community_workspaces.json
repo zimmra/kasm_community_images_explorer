@@ -2,7 +2,7 @@
     "martynvdijke/kasm-registry": {
         "github_pages": "https://martynvdijke.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-06-07T10:39:30Z",
+        "last_commit": "2026-06-08T20:29:43Z",
         "workspaces": [
             {
                 "Cura": {
@@ -109,7 +109,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-06-07T13:14:56Z",
+        "last_commit": "2026-06-08T15:23:00Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
