@@ -1,4 +1,93 @@
 {
+    "wrlliam/kreg": {
+        "github_pages": "http://registry.bnhm.systems/",
+        "stars": 0,
+        "last_commit": "2026-06-09T20:05:57Z",
+        "workspaces": [
+            {
+                "Mullvad Browser": {
+                    "friendly_name": "Mullvad Browser",
+                    "image_src": "mullvad-browser.png",
+                    "description": "Mullvad Browser is a privacy-focused web browser developed in a collaboration between Mullvad VPN and the Tor Project.",
+                    "name": "lscr.io/linuxserver/mullvad-browser:latest",
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://ghcr.io/",
+                    "categories": [
+                        "Browser"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "run_config": {
+                        "security_opt": [
+                            "seccomp=unconfined"
+                        ],
+                        "entrypoint": [
+                            "/kasminit"
+                        ],
+                        "user": 1000,
+                        "environment": {
+                            "HOME": "/home/kasm-user"
+                        }
+                    },
+                    "exec_config": {},
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        "1.13.x",
+                        "1.14.x",
+                        "1.15.x",
+                        "1.16.x"
+                    ],
+                    "uncompressed_size_mb": 2220
+                }
+            }
+        ]
+    },
+    "prot0y/kasm-registry": {
+        "github_pages": "https://prot0y.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-06-09T01:57:12Z",
+        "workspaces": [
+            {
+                "Moonlight": {
+                    "friendly_name": "Moonlight",
+                    "description": "Stream your Windows desktop via Sunshine using NVENC hardware encoding.",
+                    "image_src": "moonlight.png",
+                    "categories": [
+                        "Desktop"
+                    ],
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "docker_registry": "https://ghcr.io",
+                    "cores": 2,
+                    "memory": 2048,
+                    "compatibility": [
+                        {
+                            "version": "1.16.x",
+                            "image": "ghcr.io/prot0y/moonlight-kasm:latest",
+                            "uncompressed_size_mb": 2800
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "ghcr.io/prot0y/moonlight-kasm:latest",
+                            "uncompressed_size_mb": 2800
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/prot0y/moonlight-kasm:latest",
+                            "uncompressed_size_mb": 2800
+                        }
+                    ]
+                }
+            }
+        ]
+    },
     "martynvdijke/kasm-registry": {
         "github_pages": "https://martynvdijke.github.io/kasm-registry/",
         "stars": 0,
@@ -109,7 +198,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-06-08T15:23:00Z",
+        "last_commit": "2026-06-09T14:15:56Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
