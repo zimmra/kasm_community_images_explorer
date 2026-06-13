@@ -1,9 +1,56 @@
 {
     "blackfire-tech/kasm_registry": {
-        "github_pages": "https://blackfire-tech.github.io/kasm_registry/",
+        "github_pages": "http://kasm-registry.blackfire.tech/",
         "stars": 0,
-        "last_commit": "2026-06-12T00:24:53Z",
+        "last_commit": "2026-06-12T22:08:31Z",
         "workspaces": [
+            {
+                "Element": {
+                    "friendly_name": "Element",
+                    "description": "Element is a secure, decentralised messenger and collaboration app built on the Matrix protocol \u2014 no phone number required.",
+                    "image_src": "element.png",
+                    "docker_registry": "https://ghcr.io/",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+                        },
+                        "assign": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+                        }
+                    },
+                    "categories": [
+                        "Messaging"
+                    ],
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.16.x",
+                            "image": "ghcr.io/blackfire-tech/kasm-element:kasm",
+                            "uncompressed_size_mb": 2600
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "ghcr.io/blackfire-tech/kasm-element:kasm",
+                            "uncompressed_size_mb": 2600
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/blackfire-tech/kasm-element:kasm",
+                            "uncompressed_size_mb": 2600
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "ghcr.io/blackfire-tech/kasm-element:kasm",
+                            "uncompressed_size_mb": 2600
+                        }
+                    ]
+                }
+            },
             {
                 "Session": {
                     "friendly_name": "Session",
@@ -47,6 +94,53 @@
                             "version": "1.19.x",
                             "image": "ghcr.io/blackfire-tech/kasm-session:kasm",
                             "uncompressed_size_mb": 2600
+                        }
+                    ]
+                }
+            },
+            {
+                "SimpleX": {
+                    "friendly_name": "SimpleX Chat",
+                    "description": "SimpleX Chat is the first messaging network with no user identifiers of any kind \u2014 100% private by design, with no phone number, email, or account.",
+                    "image_src": "simplex.png",
+                    "docker_registry": "https://ghcr.io/",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+                        },
+                        "assign": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+                        }
+                    },
+                    "categories": [
+                        "Messaging"
+                    ],
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.16.x",
+                            "image": "ghcr.io/blackfire-tech/kasm-simplex:kasm",
+                            "uncompressed_size_mb": 2800
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "ghcr.io/blackfire-tech/kasm-simplex:kasm",
+                            "uncompressed_size_mb": 2800
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/blackfire-tech/kasm-simplex:kasm",
+                            "uncompressed_size_mb": 2800
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "ghcr.io/blackfire-tech/kasm-simplex:kasm",
+                            "uncompressed_size_mb": 2800
                         }
                     ]
                 }
@@ -483,7 +577,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-06-11T15:28:15Z",
+        "last_commit": "2026-06-12T14:30:31Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
