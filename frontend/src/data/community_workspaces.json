@@ -1,74 +1,8 @@
 {
-    "TheHackdes/kasm-registry": {
-        "github_pages": "https://thehackdes.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2026-06-17T19:00:23Z",
-        "workspaces": [
-            {
-                "Chromium": {
-                    "description": "The AI that actually does things.",
-                    "docker_registry": "https://ghcr.io",
-                    "image_src": "chromium.png",
-                    "gpu_count": 0,
-                    "run_config": {},
-                    "exec_config": {},
-                    "categories": [
-                        "AI",
-                        "Utilities"
-                    ],
-                    "friendly_name": "The Hackdes Image",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.19.x",
-                            "image": "ghcr.io/thehackdes/test-reg:main",
-                            "uncompressed_size_mb": 18000,
-                            "available_tags": [
-                                "latest"
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
-    },
-    "patrick-glean/kasm-registry": {
-        "github_pages": "https://patrick-glean.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2026-06-17T05:35:39Z",
-        "workspaces": [
-            {
-                "Cursor": {
-                    "description": "Cursor is the AI code editor, built on VS Code, running on a full Ubuntu Noble XFCE desktop.",
-                    "docker_registry": "https://ghcr.io",
-                    "image_src": "cursor.png",
-                    "categories": [
-                        "Development"
-                    ],
-                    "friendly_name": "Cursor",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "ghcr.io/patrick-glean/cursor-noble-desktop:develop",
-                            "uncompressed_size_mb": 4500,
-                            "available_tags": [
-                                "develop"
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
-    },
     "perspective0labs/kasmregistry_mdoublesee": {
         "github_pages": "https://perspective0labs.github.io/kasmregistry_mdoublesee/",
         "stars": 0,
-        "last_commit": "2026-06-16T20:31:59Z",
+        "last_commit": "2026-06-18T06:12:36Z",
         "workspaces": [
             {
                 "ChamSys MagicQ": {
@@ -302,6 +236,72 @@
                             "available_tags": [
                                 "latest",
                                 "v1.88.2"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "TheHackdes/kasm-registry": {
+        "github_pages": "https://thehackdes.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-06-17T19:00:23Z",
+        "workspaces": [
+            {
+                "Chromium": {
+                    "description": "The AI that actually does things.",
+                    "docker_registry": "https://ghcr.io",
+                    "image_src": "chromium.png",
+                    "gpu_count": 0,
+                    "run_config": {},
+                    "exec_config": {},
+                    "categories": [
+                        "AI",
+                        "Utilities"
+                    ],
+                    "friendly_name": "The Hackdes Image",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.19.x",
+                            "image": "ghcr.io/thehackdes/test-reg:main",
+                            "uncompressed_size_mb": 18000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "patrick-glean/kasm-registry": {
+        "github_pages": "https://patrick-glean.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-06-17T05:35:39Z",
+        "workspaces": [
+            {
+                "Cursor": {
+                    "description": "Cursor is the AI code editor, built on VS Code, running on a full Ubuntu Noble XFCE desktop.",
+                    "docker_registry": "https://ghcr.io",
+                    "image_src": "cursor.png",
+                    "categories": [
+                        "Development"
+                    ],
+                    "friendly_name": "Cursor",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/patrick-glean/cursor-noble-desktop:develop",
+                            "uncompressed_size_mb": 4500,
+                            "available_tags": [
+                                "develop"
                             ]
                         }
                     ]
@@ -855,7 +855,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-06-17T14:45:36Z",
+        "last_commit": "2026-06-18T14:41:41Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -7071,6 +7071,39 @@
                         {
                             "version": "1.16.x",
                             "image": "n3ur0515/kasm-dind-ubuntu:development",
+                            "available_tags": [
+                                "development"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "KasmDesktopUbuntu": {
+                    "description": "Custom Kasm Ubuntu Desktop Workspace",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "kasmdesktopubuntu.svg",
+                    "run_config": {
+                        "hostname": "kasm-desktop-ubuntu"
+                    },
+                    "categories": [
+                        "Desktop"
+                    ],
+                    "friendly_name": "KasmDesktopUbuntu",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "n3ur0515/kasm-desktop-ubuntu:development",
+                            "available_tags": [
+                                "development"
+                            ]
+                        },
+                        {
+                            "version": "1.16.x",
+                            "image": "n3ur0515/kasm-desktop-ubuntu:development",
                             "available_tags": [
                                 "development"
                             ]
