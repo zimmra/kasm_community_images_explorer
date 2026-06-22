@@ -1,4 +1,44 @@
 {
+    "prot0y/kasm-registry": {
+        "github_pages": "https://prot0y.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-06-21T22:49:03Z",
+        "workspaces": [
+            {
+                "Moonlight": {
+                    "friendly_name": "Moonlight",
+                    "description": "Stream your Windows desktop via Sunshine using NVENC hardware encoding.",
+                    "image_src": "moonlight.png",
+                    "categories": [
+                        "Desktop"
+                    ],
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "docker_registry": "https://ghcr.io",
+                    "cores": 2,
+                    "memory": 2048,
+                    "compatibility": [
+                        {
+                            "version": "1.16.x",
+                            "image": "ghcr.io/prot0y/moonlight-kasm:latest",
+                            "uncompressed_size_mb": 2800
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "ghcr.io/prot0y/moonlight-kasm:latest",
+                            "uncompressed_size_mb": 2800
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/prot0y/moonlight-kasm:latest",
+                            "uncompressed_size_mb": 2800
+                        }
+                    ]
+                }
+            }
+        ]
+    },
     "perspective0labs/kasmregistry_mdoublesee": {
         "github_pages": "https://perspective0labs.github.io/kasmregistry_mdoublesee/",
         "stars": 0,
@@ -740,50 +780,10 @@
             }
         ]
     },
-    "prot0y/kasm-registry": {
-        "github_pages": "https://prot0y.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2026-06-09T01:57:12Z",
-        "workspaces": [
-            {
-                "Moonlight": {
-                    "friendly_name": "Moonlight",
-                    "description": "Stream your Windows desktop via Sunshine using NVENC hardware encoding.",
-                    "image_src": "moonlight.png",
-                    "categories": [
-                        "Desktop"
-                    ],
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "docker_registry": "https://ghcr.io",
-                    "cores": 2,
-                    "memory": 2048,
-                    "compatibility": [
-                        {
-                            "version": "1.16.x",
-                            "image": "ghcr.io/prot0y/moonlight-kasm:latest",
-                            "uncompressed_size_mb": 2800
-                        },
-                        {
-                            "version": "1.17.x",
-                            "image": "ghcr.io/prot0y/moonlight-kasm:latest",
-                            "uncompressed_size_mb": 2800
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "ghcr.io/prot0y/moonlight-kasm:latest",
-                            "uncompressed_size_mb": 2800
-                        }
-                    ]
-                }
-            }
-        ]
-    },
     "martynvdijke/kasm-registry": {
         "github_pages": "https://martynvdijke.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-06-08T20:29:43Z",
+        "last_commit": "2026-06-21T17:23:04Z",
         "workspaces": [
             {
                 "Cura": {
@@ -855,7 +855,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-06-20T13:21:19Z",
+        "last_commit": "2026-06-21T13:31:56Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
