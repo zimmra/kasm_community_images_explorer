@@ -473,37 +473,6 @@
             }
         ]
     },
-    "patrick-glean/kasm-registry": {
-        "github_pages": "https://patrick-glean.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2026-06-17T05:35:39Z",
-        "workspaces": [
-            {
-                "Cursor": {
-                    "description": "Cursor is the AI code editor, built on VS Code, running on a full Ubuntu Noble XFCE desktop.",
-                    "docker_registry": "https://ghcr.io",
-                    "image_src": "cursor.png",
-                    "categories": [
-                        "Development"
-                    ],
-                    "friendly_name": "Cursor",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.18.x",
-                            "image": "ghcr.io/patrick-glean/cursor-noble-desktop:develop",
-                            "uncompressed_size_mb": 4500,
-                            "available_tags": [
-                                "develop"
-                            ]
-                        }
-                    ]
-                }
-            }
-        ]
-    },
     "wolfpackmars2/kasm-registry": {
         "github_pages": "https://wolfpackmars2.github.io/kasm-registry/",
         "stars": 1,
@@ -1010,7 +979,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-06-25T13:57:37Z",
+        "last_commit": "2026-06-26T13:56:25Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
