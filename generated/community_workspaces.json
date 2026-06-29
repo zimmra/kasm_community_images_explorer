@@ -1313,7 +1313,7 @@
     "martynvdijke/kasm-registry": {
         "github_pages": "https://martynvdijke.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-06-21T17:23:04Z",
+        "last_commit": "2026-06-28T22:40:37Z",
         "workspaces": [
             {
                 "Cura": {
@@ -1385,7 +1385,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-06-27T13:03:53Z",
+        "last_commit": "2026-06-28T13:10:02Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -9273,42 +9273,6 @@
                 }
             },
             {
-                "kdenlive": {
-                    "description": "Kdenlive is a powerful free and open source cross-platform video editing program made by the KDE community.",
-                    "docker_registry": "https://ghcr.io/",
-                    "image_src": "kdenlive.png",
-                    "name": "lscr.io/linuxserver/kdenlive:latest",
-                    "run_config": {
-                        "security_opt": [
-                            "seccomp=unconfined"
-                        ],
-                        "entrypoint": [
-                            "/kasminit"
-                        ],
-                        "user": 1000,
-                        "environment": {
-                            "HOME": "/home/kasm-user"
-                        }
-                    },
-                    "exec_config": {},
-                    "categories": [
-                        "Multimedia"
-                    ],
-                    "friendly_name": "Kdenlive",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        "1.13.x",
-                        "1.14.x",
-                        "1.15.x",
-                        "1.16.x"
-                    ],
-                    "uncompressed_size_mb": 1880
-                }
-            },
-            {
                 "keepassxc": {
                     "description": "KeePassXC is a free and open-source password manager.",
                     "docker_registry": "https://ghcr.io/",
@@ -15033,40 +14997,6 @@
                 }
             },
             {
-                "RustDesk": {
-                    "description": "An open-source remote desktop and alternative to TeamViewer",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "rustdesk.png",
-                    "name": "doctorwhen/kasm:rustdesk",
-                    "friendly_name": "RustDesk",
-                    "cores": 2,
-                    "memory": 4096,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "run_config": {
-                        "hostname": "kasm-rustdesk"
-                    },
-                    "exec_config": {
-                        "first_launch": {
-                            "user": "root",
-                            "cmd": "bash -c 'echo \"kasm-user  ALL=(ALL) NOPASSWD: ALL\" >> /etc/sudoers'"
-                        }
-                    },
-                    "categories": [
-                        "Desktop",
-                        "Productivity"
-                    ],
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        "1.15.x",
-                        "1.14.x"
-                    ],
-                    "uncompressed_size_mb": 13000
-                }
-            },
-            {
                 "Ubuntu-Focal": {
                     "description": "Customized Ubuntu 20.04 (Focal) desktop with extras",
                     "docker_registry": "https://index.docker.io/v1/",
@@ -20614,30 +20544,6 @@
                 }
             },
             {
-                "SD-DEV1.15.1": {
-                    "description": "A kasm ubuntu dekstop with jetbrains rider, vscode, node 20 lts, volta and vscode installed",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "bg.jpg",
-                    "name": "stijndhondt/kasm-ubuntu-dev:1.15.1",
-                    "friendly_name": "Angular_Dotnet 1.15.1",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "categories": [
-                        "Development"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        "1.15.x"
-                    ]
-                }
-            },
-            {
                 "SD-DEV1.15.2": {
                     "description": "A kasm ubuntu dekstop with jetbrains rider, vscode, node 20 lts, volta and vscode installed",
                     "docker_registry": "https://index.docker.io/v1/",
@@ -21099,48 +21005,6 @@
                         "1.15.x"
                     ],
                     "uncompressed_size_mb": 2880
-                }
-            }
-        ]
-    },
-    "TheSudoYT/kasm-registry": {
-        "github_pages": "https://thesudoyt.github.io/kasm-registry/",
-        "stars": 1,
-        "last_commit": "2024-05-27T23:34:24Z",
-        "workspaces": [
-            {
-                "Minecraft Client": {
-                    "description": "Minecraft Client",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "minecraft.png",
-                    "name": "thesudo/kasm-minecraft-client:latest",
-                    "cores": 2,
-                    "memory": 2048,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "run_config": {
-                        "hostname": "minecraft"
-                    },
-                    "exec_config": {
-                        "go": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
-                        },
-                        "assign": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
-                        }
-                    },
-                    "categories": [
-                        "Games"
-                    ],
-                    "friendly_name": "Minecraft Client",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        "1.14.x",
-                        "1.15.x"
-                    ],
-                    "uncompressed_size_mb": 4096
                 }
             }
         ]
