@@ -1,4 +1,49 @@
 {
+    "mamama1/kasm-registry": {
+        "github_pages": "https://mamama1.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-07-08T23:27:02Z",
+        "workspaces": [
+            {
+                "Ubuntu Noble Battlemage": {
+                    "friendly_name": "Ubuntu Noble (Intel Arc Battlemage)",
+                    "description": "Ubuntu Noble desktop with Intel Arc Battlemage (Xe2) GPU acceleration and custom apps (DrawIO, Bitwarden, Syncthing, and more).",
+                    "docker_registry": "https://ghcr.io",
+                    "image_src": "ubuntu-noble-battlemage.png",
+                    "categories": [
+                        "Desktop"
+                    ],
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "notes": "Requires an Intel Arc GPU on the agent and /dev/dri/renderD128 render-node passthrough (render group gid 993) for hardware video encode/decode. group_add gid and render node are host-specific.",
+                    "compatibility": [
+                        {
+                            "version": "1.19.x",
+                            "image": "ghcr.io/mamama1/kasm-ubuntu-noble-desktop-battlemage:1.19.0",
+                            "uncompressed_size_mb": 0
+                        }
+                    ],
+                    "run_config": {
+                        "hostname": "kasm",
+                        "devices": [
+                            "/dev/dri/renderD128:/dev/dri/renderD128:rw"
+                        ],
+                        "group_add": [
+                            "993"
+                        ],
+                        "environment": {
+                            "LANG": "en_US.UTF-8",
+                            "LC_TIME": "de_DE.UTF-8",
+                            "LC_PAPER": "de_DE.UTF-8",
+                            "LC_MONETARY": "de_DE.UTF-8",
+                            "TZ": "Europe/Berlin"
+                        }
+                    }
+                }
+            }
+        ]
+    },
     "jtruland/kasm-registry": {
         "github_pages": "https://jtruland.github.io/kasm-registry/",
         "stars": 0,
@@ -1478,7 +1523,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-07-07T14:01:33Z",
+        "last_commit": "2026-07-08T13:23:33Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
