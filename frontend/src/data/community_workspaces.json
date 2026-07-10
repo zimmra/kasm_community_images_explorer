@@ -1,4 +1,45 @@
 {
+    "ITsLoveCats/kasm-registry": {
+        "github_pages": "https://itslovecats.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-07-09T21:52:04Z",
+        "workspaces": [
+            {
+                "langflow": {
+                    "description": "Langflow is a low-code app builder for RAG and multi-agent AI applications.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "langflow.png",
+                    "run_config": {
+                        "hostname": "langflow-workspace",
+                        "environment": {
+                            "LANGFLOW_HOST": "0.0.0.0",
+                            "LANGFLOW_PORT": "7860"
+                        }
+                    },
+                    "cores": 2,
+                    "memory": 4096,
+                    "gpu_count": 0,
+                    "categories": [
+                        "AI"
+                    ],
+                    "friendly_name": "Langflow",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.19.x",
+                            "image": "langflowai/langflow:latest",
+                            "uncompressed_size_mb": 2500,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
     "mamama1/kasm-registry": {
         "github_pages": "https://mamama1.github.io/kasm-registry/",
         "stars": 0,
@@ -1523,7 +1564,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-07-08T13:23:33Z",
+        "last_commit": "2026-07-09T14:25:58Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -1733,49 +1774,6 @@
                         {
                             "version": "1.18.x",
                             "image": "ghcr.io/sourcediver42/kasm-registry/ghidra-10.1.5:1.18",
-                            "available_tags": [
-                                "1.18"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "Ghidra 10.1": {
-                    "friendly_name": "Ghidra 10.1",
-                    "description": "Ghidra reverse engineering suite",
-                    "docker_registry": "https://ghcr.io/",
-                    "image_src": "icon.png",
-                    "gpu_count": 0,
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "run_config": {
-                        "security_opt": [
-                            "seccomp=unconfined"
-                        ],
-                        "user": 1000,
-                        "environment": {
-                            "HOME": "/home/kasm-user"
-                        }
-                    },
-                    "categories": [
-                        "Security"
-                    ],
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "ghcr.io/sourcediver42/kasm-registry/ghidra-10.1:1.17",
-                            "available_tags": [
-                                "1.17"
-                            ]
-                        },
-                        {
-                            "version": "1.18.x",
-                            "image": "ghcr.io/sourcediver42/kasm-registry/ghidra-10.1:1.18",
                             "available_tags": [
                                 "1.18"
                             ]
