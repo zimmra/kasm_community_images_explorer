@@ -1,4 +1,450 @@
 {
+    "gridpaneburti-ship-it/kasmburti": {
+        "github_pages": "https://gridpaneburti-ship-it.github.io/kasmburti/",
+        "stars": 0,
+        "last_commit": "2026-07-16T07:05:38Z",
+        "workspaces": [
+            {
+                "EndeavourOS": {
+                    "description": "EndeavourOS is a rolling release Linux distribution based on Arch Linux. This workspace features an Arch-based foundation with the KDE Plasma desktop environment.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "endeavouros.svg",
+                    "categories": [
+                        "Operating System"
+                    ],
+                    "friendly_name": "EndeavourOS",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.19.x",
+                            "image": "archlinux:latest",
+                            "uncompressed_size_mb": 3500,
+                            "available_tags": [
+                                "latest",
+                                "rolling",
+                                "develop"
+                            ]
+                        }
+                    ],
+                    "run_config": {
+                        "environment": [
+                            {
+                                "name": "DISPLAY",
+                                "value": "${KASM_DISPLAY}"
+                            }
+                        ],
+                        "privileged": false
+                    },
+                    "exec_config": {
+                        "working_dir": "/home/kasm-user"
+                    },
+                    "cores": 2,
+                    "memory": 4096
+                }
+            },
+            {
+                "Manjaro-Rolling": {
+                    "description": "Manjaro is an accessible, friendly, open-source Linux distribution based on Arch Linux. This workspace includes a KDE Plasma desktop environment.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "manjaro.svg",
+                    "categories": [
+                        "Operating System"
+                    ],
+                    "friendly_name": "Manjaro Rolling",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.19.x",
+                            "image": "manjarolinux/base:latest",
+                            "uncompressed_size_mb": 3500,
+                            "available_tags": [
+                                "latest",
+                                "rolling",
+                                "develop"
+                            ]
+                        }
+                    ],
+                    "run_config": {
+                        "environment": [
+                            {
+                                "name": "DISPLAY",
+                                "value": "${KASM_DISPLAY}"
+                            }
+                        ],
+                        "privileged": false
+                    },
+                    "exec_config": {
+                        "working_dir": "/home/kasm-user"
+                    },
+                    "cores": 2,
+                    "memory": 4096
+                }
+            },
+            {
+                "RHEL": {
+                    "description": "Red Hat Enterprise Linux is a commercial Linux distribution developed by Red Hat, designed for enterprise use with long-term support.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "rhel.svg",
+                    "categories": [
+                        "Operating System",
+                        "Enterprise",
+                        "Server"
+                    ],
+                    "friendly_name": "Red Hat Enterprise Linux",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.19.x",
+                            "image": "redhat/ubi8",
+                            "uncompressed_size_mb": 2800,
+                            "available_tags": [
+                                "8",
+                                "9",
+                                "latest",
+                                "develop"
+                            ]
+                        }
+                    ],
+                    "run_config": {
+                        "environment": [
+                            {
+                                "name": "DISPLAY",
+                                "value": "${KASM_DISPLAY}"
+                            }
+                        ],
+                        "privileged": false
+                    },
+                    "exec_config": {
+                        "working_dir": "/home/kasm-user"
+                    },
+                    "cores": 2,
+                    "memory": 4096,
+                    "notes": "Red Hat Universal Base Image (UBI) provides a free-to-use container base image with enterprise-grade security and long-term support."
+                }
+            },
+            {
+                "Rocky-Linux": {
+                    "description": "Rocky Linux is an open-source enterprise operating system designed to be 100% bug-for-bug compatible with Red Hat Enterprise Linux.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "rockylinux.svg",
+                    "categories": [
+                        "Operating System",
+                        "Enterprise",
+                        "Server"
+                    ],
+                    "friendly_name": "Rocky Linux",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.19.x",
+                            "image": "rockylinux:9",
+                            "uncompressed_size_mb": 2500,
+                            "available_tags": [
+                                "9",
+                                "8",
+                                "latest",
+                                "develop"
+                            ]
+                        }
+                    ],
+                    "run_config": {
+                        "environment": [
+                            {
+                                "name": "DISPLAY",
+                                "value": "${KASM_DISPLAY}"
+                            }
+                        ],
+                        "privileged": false
+                    },
+                    "exec_config": {
+                        "working_dir": "/home/kasm-user"
+                    },
+                    "cores": 2,
+                    "memory": 4096
+                }
+            },
+            {
+                "Ubuntu": {
+                    "description": "Ubuntu is a popular Linux distribution based on Debian, known for its ease of use and extensive software repository.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "ubuntu.svg",
+                    "categories": [
+                        "Operating System",
+                        "Development"
+                    ],
+                    "friendly_name": "Ubuntu",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.19.x",
+                            "image": "ubuntu:22.04",
+                            "uncompressed_size_mb": 2700,
+                            "available_tags": [
+                                "22.04",
+                                "20.04",
+                                "latest",
+                                "develop"
+                            ]
+                        }
+                    ],
+                    "run_config": {
+                        "environment": [
+                            {
+                                "name": "DISPLAY",
+                                "value": "${KASM_DISPLAY}"
+                            }
+                        ],
+                        "privileged": false
+                    },
+                    "exec_config": {
+                        "working_dir": "/home/kasm-user"
+                    },
+                    "cores": 2,
+                    "memory": 4096
+                }
+            }
+        ]
+    },
+    "jtruland/kasm-registry": {
+        "github_pages": "https://jtruland.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-07-16T03:11:10Z",
+        "workspaces": [
+            {
+                "Claude Code Custom": {
+                    "description": "Claude Code (custom) \u2014 Kasm desktop running the Claude Code CLI plus developer tooling: gh, docker-cli, Playwright/Chromium, Python (pip/pipx/uv/ansible), and .NET 8 SDK + pac CLI (Power Platform). The ~/.claude profile is persisted via the Kasm persistent profile volume. [Build: 2026-07-16 03:01 UTC]",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "claude-code.png",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "categories": [
+                        "Development"
+                    ],
+                    "friendly_name": "Claude Code Custom",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.19.0",
+                            "image": "jtruland/kasm-claude-code:develop",
+                            "uncompressed_size_mb": 6722,
+                            "available_tags": [
+                                "develop",
+                                "20260716-0301"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Shing1987/kasm-registry": {
+        "github_pages": "https://shing1987.github.io/kasm-registry/",
+        "stars": 0,
+        "last_commit": "2026-07-16T02:32:23Z",
+        "workspaces": [
+            {
+                "altus": {
+                    "friendly_name": "Altus",
+                    "image_src": "altus.png",
+                    "description": "Altus is an Electron-based WhatsApp client with themes and multiple account support.",
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://ghcr.io/",
+                    "categories": [
+                        "Communication"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "run_config": {
+                        "security_opt": [
+                            "seccomp=unconfined"
+                        ],
+                        "entrypoint": [
+                            "/kasminit"
+                        ],
+                        "user": 1000,
+                        "environment": {
+                            "HOME": "/home/kasm-user"
+                        }
+                    },
+                    "exec_config": {},
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.16.x",
+                            "image": "lscr.io/linuxserver/altus:5.7.1-ls85",
+                            "uncompressed_size_mb": 2120
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "lscr.io/linuxserver/altus:5.7.1-ls85",
+                            "uncompressed_size_mb": 2120
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "lscr.io/linuxserver/altus:5.7.1-ls85",
+                            "uncompressed_size_mb": 2120
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "lscr.io/linuxserver/altus:5.7.1-ls85",
+                            "uncompressed_size_mb": 2120
+                        },
+                        {
+                            "version": "1.20.x",
+                            "image": "lscr.io/linuxserver/altus:5.7.1-ls85",
+                            "uncompressed_size_mb": 2120
+                        }
+                    ]
+                }
+            },
+            {
+                "remmina": {
+                    "friendly_name": "Remmina",
+                    "image_src": "remmina.png",
+                    "description": "Remmina is a remote desktop client for POSIX-based computer operating systems. It supports the Remote Desktop Protocol (RDP), VNC, NX, XDMCP, SPICE, X2Go and SSH protocols and uses FreeRDP as foundation.",
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://ghcr.io/",
+                    "categories": [
+                        "Productivity"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "run_config": {
+                        "security_opt": [
+                            "seccomp=unconfined"
+                        ],
+                        "entrypoint": [
+                            "/kasminit"
+                        ],
+                        "user": 1000,
+                        "environment": {
+                            "HOME": "/home/kasm-user"
+                        }
+                    },
+                    "exec_config": {},
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.16.x",
+                            "image": "lscr.io/linuxserver/remmina:latest",
+                            "uncompressed_size_mb": 1660
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "lscr.io/linuxserver/remmina:latest",
+                            "uncompressed_size_mb": 1660
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "lscr.io/linuxserver/remmina:latest",
+                            "uncompressed_size_mb": 1660
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "lscr.io/linuxserver/remmina:latest",
+                            "uncompressed_size_mb": 1660
+                        },
+                        {
+                            "version": "1.20.x",
+                            "image": "lscr.io/linuxserver/remmina:latest",
+                            "uncompressed_size_mb": 1660
+                        }
+                    ]
+                }
+            },
+            {
+                "rustdesk": {
+                    "friendly_name": "RustDesk",
+                    "image_src": "rustdesk.png",
+                    "description": "RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.",
+                    "cores": 2,
+                    "memory": 2768,
+                    "gpu_count": 0,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://ghcr.io/",
+                    "categories": [
+                        "Productivity"
+                    ],
+                    "require_gpu": false,
+                    "enabled": true,
+                    "image_type": "Container",
+                    "run_config": {
+                        "security_opt": [
+                            "seccomp=unconfined"
+                        ],
+                        "entrypoint": [
+                            "/kasminit"
+                        ],
+                        "user": 1000,
+                        "environment": {
+                            "HOME": "/home/kasm-user"
+                        }
+                    },
+                    "exec_config": {},
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.16.x",
+                            "image": "lscr.io/linuxserver/rustdesk:1.4.0-LS58",
+                            "uncompressed_size_mb": 2470
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "lscr.io/linuxserver/rustdesk:1.4.0-LS58",
+                            "uncompressed_size_mb": 2470
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "lscr.io/linuxserver/rustdesk:1.4.0-LS58",
+                            "uncompressed_size_mb": 2470
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "lscr.io/linuxserver/rustdesk:1.4.0-LS58",
+                            "uncompressed_size_mb": 2470
+                        },
+                        {
+                            "version": "1.20.x",
+                            "image": "lscr.io/linuxserver/rustdesk:1.4.0-LS58",
+                            "uncompressed_size_mb": 2470
+                        }
+                    ]
+                }
+            }
+        ]
+    },
     "sullyschoice/kasm-registry": {
         "github_pages": "https://sullyschoice.github.io/kasm-registry/",
         "stars": 7,
@@ -794,41 +1240,6 @@
                             "TZ": "Europe/Berlin"
                         }
                     }
-                }
-            }
-        ]
-    },
-    "jtruland/kasm-registry": {
-        "github_pages": "https://jtruland.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2026-07-01T04:02:56Z",
-        "workspaces": [
-            {
-                "Claude Code Custom": {
-                    "description": "Claude Code (custom) \u2014 Kasm desktop running the Claude Code CLI plus developer tooling: gh, docker-cli, Playwright/Chromium, Python (pip/pipx/uv/ansible), and .NET 8 SDK + pac CLI (Power Platform). The ~/.claude profile is persisted via the Kasm persistent profile volume. [Build: 2026-07-01 04:00 UTC]",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "claude-code.png",
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "categories": [
-                        "Development"
-                    ],
-                    "friendly_name": "Claude Code Custom",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.19.0",
-                            "image": "jtruland/kasm-claude-code:develop",
-                            "uncompressed_size_mb": 6722,
-                            "available_tags": [
-                                "develop",
-                                "20260701-0400"
-                            ]
-                        }
-                    ]
                 }
             }
         ]
@@ -2277,7 +2688,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-07-15T13:04:33Z",
+        "last_commit": "2026-07-16T13:13:16Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -14434,153 +14845,6 @@
                             "version": "1.17.x",
                             "image": "lscr.io/linuxserver/zotero:latest",
                             "uncompressed_size_mb": 2270
-                        }
-                    ]
-                }
-            }
-        ]
-    },
-    "Shing1987/kasm-registry": {
-        "github_pages": "https://shing1987.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2025-07-31T14:18:56Z",
-        "workspaces": [
-            {
-                "altus": {
-                    "friendly_name": "Altus",
-                    "image_src": "altus.png",
-                    "description": "Altus is an Electron-based WhatsApp client with themes and multiple account support.",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://ghcr.io/",
-                    "categories": [
-                        "Communication"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "run_config": {
-                        "security_opt": [
-                            "seccomp=unconfined"
-                        ],
-                        "entrypoint": [
-                            "/kasminit"
-                        ],
-                        "user": 1000,
-                        "environment": {
-                            "HOME": "/home/kasm-user"
-                        }
-                    },
-                    "exec_config": {},
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.16.x",
-                            "image": "lscr.io/linuxserver/altus:5.7.1-ls85",
-                            "uncompressed_size_mb": 2120
-                        },
-                        {
-                            "version": "1.17.x",
-                            "image": "lscr.io/linuxserver/altus:5.7.1-ls85",
-                            "uncompressed_size_mb": 2120
-                        }
-                    ]
-                }
-            },
-            {
-                "remmina": {
-                    "friendly_name": "Remmina",
-                    "image_src": "remmina.png",
-                    "description": "Remmina is a remote desktop client for POSIX-based computer operating systems. It supports the Remote Desktop Protocol (RDP), VNC, NX, XDMCP, SPICE, X2Go and SSH protocols and uses FreeRDP as foundation.",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://ghcr.io/",
-                    "categories": [
-                        "Productivity"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "run_config": {
-                        "security_opt": [
-                            "seccomp=unconfined"
-                        ],
-                        "entrypoint": [
-                            "/kasminit"
-                        ],
-                        "user": 1000,
-                        "environment": {
-                            "HOME": "/home/kasm-user"
-                        }
-                    },
-                    "exec_config": {},
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.16.x",
-                            "image": "lscr.io/linuxserver/remmina:latest",
-                            "uncompressed_size_mb": 1660
-                        },
-                        {
-                            "version": "1.17.x",
-                            "image": "lscr.io/linuxserver/remmina:latest",
-                            "uncompressed_size_mb": 1660
-                        }
-                    ]
-                }
-            },
-            {
-                "rustdesk": {
-                    "friendly_name": "RustDesk",
-                    "image_src": "rustdesk.png",
-                    "description": "RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.",
-                    "cores": 2,
-                    "memory": 2768,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://ghcr.io/",
-                    "categories": [
-                        "Productivity"
-                    ],
-                    "require_gpu": false,
-                    "enabled": true,
-                    "image_type": "Container",
-                    "run_config": {
-                        "security_opt": [
-                            "seccomp=unconfined"
-                        ],
-                        "entrypoint": [
-                            "/kasminit"
-                        ],
-                        "user": 1000,
-                        "environment": {
-                            "HOME": "/home/kasm-user"
-                        }
-                    },
-                    "exec_config": {},
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.16.x",
-                            "image": "lscr.io/linuxserver/rustdesk:1.4.0-LS58",
-                            "uncompressed_size_mb": 2470
-                        },
-                        {
-                            "version": "1.17.x",
-                            "image": "lscr.io/linuxserver/rustdesk:1.4.0-LS58",
-                            "uncompressed_size_mb": 2470
                         }
                     ]
                 }
