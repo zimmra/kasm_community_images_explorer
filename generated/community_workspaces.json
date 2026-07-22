@@ -2,7 +2,7 @@
     "gridpaneburti-ship-it/kasmburti": {
         "github_pages": "https://gridpaneburti-ship-it.github.io/kasmburti/",
         "stars": 0,
-        "last_commit": "2026-07-19T12:54:28Z",
+        "last_commit": "2026-07-21T03:19:10Z",
         "workspaces": [
             {
                 "EndeavourOS": {
@@ -213,7 +213,7 @@
                         "working_dir": "/home/kasm-user"
                     },
                     "cores": 2,
-                    "memory": 4096
+                    "memory_bytes": 2902458368
                 }
             }
         ]
@@ -2688,7 +2688,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-07-20T13:46:56Z",
+        "last_commit": "2026-07-21T13:11:01Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
