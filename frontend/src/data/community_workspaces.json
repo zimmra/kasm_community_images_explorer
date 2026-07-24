@@ -2688,7 +2688,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-07-22T13:16:21Z",
+        "last_commit": "2026-07-23T13:19:24Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -27811,37 +27811,6 @@
                 }
             },
             {
-                "vscodium": {
-                    "description": "VSCodium is a community-driven, freely-licensed binary distribution of Microsoft\u2019s editor VS Code.",
-                    "docker_registry": "https://ghcr.io/",
-                    "image_src": "vscodium.png",
-                    "name": "lscr.io/linuxserver/vscodium:latest",
-                    "run_config": {
-                        "entrypoint": [
-                            "/kasminit"
-                        ],
-                        "user": 1000,
-                        "cap_add": [
-                            "IPC_LOCK"
-                        ]
-                    },
-                    "exec_config": {},
-                    "categories": [
-                        "Development"
-                    ],
-                    "friendly_name": "VSCodium",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        "1.13.x",
-                        "1.14.x"
-                    ],
-                    "uncompressed_size_mb": 2020
-                }
-            },
-            {
                 "wireshark": {
                     "description": "Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education.",
                     "docker_registry": "https://ghcr.io/",
@@ -28667,37 +28636,6 @@
                         "1.14.x"
                     ],
                     "uncompressed_size_mb": 1190
-                }
-            },
-            {
-                "alpine-kde": {
-                    "description": "Alpine with the KDE desktop environment.",
-                    "docker_registry": "https://ghcr.io/",
-                    "image_src": "alpine-kde.png",
-                    "name": "lscr.io/linuxserver/webtop:alpine-kde",
-                    "run_config": {
-                        "security_opt": [
-                            "seccomp=unconfined"
-                        ],
-                        "entrypoint": [
-                            "/kasminit"
-                        ],
-                        "user": 1000
-                    },
-                    "exec_config": {},
-                    "categories": [
-                        "Desktop"
-                    ],
-                    "friendly_name": "Alpine KDE",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        "1.13.x",
-                        "1.14.x"
-                    ],
-                    "uncompressed_size_mb": 2320
                 }
             },
             {
