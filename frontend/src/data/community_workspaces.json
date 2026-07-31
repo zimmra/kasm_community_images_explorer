@@ -1,4 +1,41 @@
 {
+    "cristianpoe/crispoe-registry": {
+        "github_pages": "https://cristianpoe.github.io/crispoe-registry/",
+        "stars": 0,
+        "last_commit": "2026-07-30T19:48:38Z",
+        "workspaces": [
+            {
+                "Email Analyser": {
+                    "friendly_name": "Email Analyser",
+                    "image_src": "email-analyser.png",
+                    "description": "Self-contained .eml file analyser",
+                    "cores": 2,
+                    "memory": 2768,
+                    "cpu_allocation_method": "Inherit",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "categories": [
+                        "Productivity"
+                    ],
+                    "enabled": true,
+                    "image_type": "Container",
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.17.x",
+                            "image": "crispoe/email-analyser:1.0",
+                            "uncompressed_size_mb": 3190,
+                            "available_tags": [
+                                "1.0"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
     "jtruland/kasm-registry": {
         "github_pages": "https://jtruland.github.io/kasm-registry/",
         "stars": 0,
@@ -2524,7 +2561,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-07-29T13:32:28Z",
+        "last_commit": "2026-07-30T13:22:24Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -12057,73 +12094,6 @@
                         "1.14.x"
                     ],
                     "uncompressed_size_mb": 2170
-                }
-            }
-        ]
-    },
-    "cristianpoe/crispoe-registry": {
-        "github_pages": "https://cristianpoe.github.io/crispoe-registry/",
-        "stars": 0,
-        "last_commit": "2025-09-20T21:45:32Z",
-        "workspaces": [
-            {
-                "Email Analyser": {
-                    "friendly_name": "Email Analyser",
-                    "image_src": "email-analyser.png",
-                    "description": "Self-contained .eml file analyser",
-                    "cores": 2,
-                    "memory": 2768,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "categories": [
-                        "Productivity"
-                    ],
-                    "enabled": true,
-                    "image_type": "Container",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "crispoe/email-analyser:1.0",
-                            "uncompressed_size_mb": 3190,
-                            "available_tags": [
-                                "1.0"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "playbook_generator": {
-                    "friendly_name": "Playbook Generator",
-                    "image_src": "playbook_generator.png",
-                    "description": "Self-contained AI prompt playbook generator",
-                    "cores": 2,
-                    "memory": 2768,
-                    "cpu_allocation_method": "Inherit",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "categories": [
-                        "Productivity"
-                    ],
-                    "enabled": true,
-                    "image_type": "Container",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.17.x",
-                            "image": "crispoe/playbook_generator:1.0",
-                            "uncompressed_size_mb": 3190,
-                            "available_tags": [
-                                "1.0"
-                            ]
-                        }
-                    ]
                 }
             }
         ]
