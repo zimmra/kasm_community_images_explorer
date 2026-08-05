@@ -2639,7 +2639,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-08-03T14:10:57Z",
+        "last_commit": "2026-08-04T13:32:11Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -26963,37 +26963,6 @@
                         "1.14.x"
                     ],
                     "uncompressed_size_mb": 1660
-                }
-            },
-            {
-                "sqlitebrowser": {
-                    "description": "DB Browser for SQLite (DB4S) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.",
-                    "docker_registry": "https://ghcr.io/",
-                    "image_src": "sqlitebrowser.png",
-                    "name": "lscr.io/linuxserver/sqlitebrowser:latest",
-                    "run_config": {
-                        "security_opt": [
-                            "seccomp=unconfined"
-                        ],
-                        "entrypoint": [
-                            "/kasminit"
-                        ],
-                        "user": 1000
-                    },
-                    "exec_config": {},
-                    "categories": [
-                        "Development"
-                    ],
-                    "friendly_name": "SQLiteBrowser",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        "1.13.x",
-                        "1.14.x"
-                    ],
-                    "uncompressed_size_mb": 1070
                 }
             },
             {
