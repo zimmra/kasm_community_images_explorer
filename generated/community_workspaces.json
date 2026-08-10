@@ -2950,7 +2950,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-08-08T12:22:44Z",
+        "last_commit": "2026-08-09T12:26:11Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -10974,6 +10974,43 @@
                             "version": "1.18.x",
                             "image": "slewantoski/kasm-kicad:latest",
                             "uncompressed_size_mb": 12698,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "NobleDesktop": {
+                    "description": "Ubuntu is a Linux distribution based on Debian. This Desktop is customized with some Software",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "ubuntu.png",
+                    "run_config": {
+                        "hostname": "kasm"
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+                        },
+                        "assign": {
+                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+                        }
+                    },
+                    "categories": [
+                        "Productivity",
+                        "Desktop",
+                        "Development"
+                    ],
+                    "friendly_name": "Ubuntu Noble Desktop",
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "slewantoski/kasm-nobledesktop:latest",
+                            "uncompressed_size_mb": 28672,
                             "available_tags": [
                                 "latest"
                             ]
