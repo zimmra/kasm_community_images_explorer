@@ -1,4 +1,266 @@
 {
+    "perspective0labs/kasmregistry_mdoublesee": {
+        "github_pages": "https://perspective0labs.github.io/kasmregistry_mdoublesee/",
+        "stars": 1,
+        "last_commit": "2026-08-14T23:22:44Z",
+        "workspaces": [
+            {
+                "ChamSys MagicQ": {
+                    "friendly_name": "ChamSys MagicQ",
+                    "description": "ChamSys MagicQ professional lighting console software. Full 64-universe DMX control, visualiser, and fixture library. Shows persist across sessions.",
+                    "docker_registry": "https://ghcr.io",
+                    "image_src": "magicq.png",
+                    "categories": [
+                        "Entertainment",
+                        "Media Production"
+                    ],
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "run_config": {
+                        "environment": {
+                            "KASM_PROFILE_PATH": "/{username}/chamsys-magicq"
+                        }
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c \"/opt/magicq/runmagicq.sh\""
+                        }
+                    },
+                    "persistent_profile_config": {
+                        "enabled": true,
+                        "profile_path": "/mnt/kasm_profiles/{username}/{image_id}",
+                        "max_size_mb": 2048
+                    },
+                    "cores": 2,
+                    "memory": 3072,
+                    "notes": "Shows are stored persistently under ~/MagicQ/shows. Heads and personalities are pre-expanded in the image. MagicQ PC edition \u2014 64 universes fully enabled.",
+                    "compatibility": [
+                        {
+                            "version": "1.16.x",
+                            "image": "ghcr.io/perspective0labs/magicq-kasm:latest",
+                            "uncompressed_size_mb": 3500,
+                            "available_tags": [
+                                "latest",
+                                "1.9.7.4"
+                            ]
+                        },
+                        {
+                            "version": "1.17.x",
+                            "image": "ghcr.io/perspective0labs/magicq-kasm:latest",
+                            "uncompressed_size_mb": 3500,
+                            "available_tags": [
+                                "latest",
+                                "1.9.7.4"
+                            ]
+                        },
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/perspective0labs/magicq-kasm:latest",
+                            "uncompressed_size_mb": 3500,
+                            "available_tags": [
+                                "latest",
+                                "1.9.7.4"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "ghcr.io/perspective0labs/magicq-kasm:latest",
+                            "uncompressed_size_mb": 3500,
+                            "available_tags": [
+                                "latest",
+                                "1.9.7.4"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Claude Code": {
+                    "friendly_name": "Claude Code (Qwen)",
+                    "description": "Claude Code CLI with Ollama + qwen2.5-coder:7b running inside the container \u2014 GPU-accelerated, no external proxy needed.",
+                    "docker_registry": "https://ghcr.io",
+                    "image_src": "claude-code.svg",
+                    "categories": [
+                        "Development",
+                        "AI"
+                    ],
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "notes": "Ollama and LiteLLM start automatically inside the container. First launch pulls qwen2.5-coder:7b (~4.7 GB) \u2014 subsequent launches use the cached model from the ollama-models volume.\n\nRequires NVIDIA GPU passthrough enabled in Kasm (nvidia runtime). Model choice can be overridden via the OLLAMA_MODEL environment variable.",
+                    "run_config": {
+                        "environment": {
+                            "ANTHROPIC_BASE_URL": "http://localhost:4001",
+                            "ANTHROPIC_API_KEY": "sk-local",
+                            "OLLAMA_MODEL": "qwen2.5-coder:7b",
+                            "NVIDIA_VISIBLE_DEVICES": "all",
+                            "NVIDIA_DRIVER_CAPABILITIES": "compute,utility"
+                        },
+                        "volumes": {
+                            "/{username}/ollama-models": {
+                                "bind": "/root/.ollama",
+                                "mode": "rw"
+                            },
+                            "/{username}/claude-code": {
+                                "bind": "/home/kasm-user/.claude",
+                                "mode": "rw",
+                                "uid": 1000,
+                                "gid": 1000
+                            }
+                        }
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c \"/usr/local/bin/start-services.sh\""
+                        }
+                    },
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/perspective0labs/claude-code-qwen:latest",
+                            "uncompressed_size_mb": 8000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        },
+                        {
+                            "version": "1.19.x",
+                            "image": "ghcr.io/perspective0labs/claude-code-qwen:latest",
+                            "uncompressed_size_mb": 8000,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Hermes-Agent": {
+                    "friendly_name": "Hermes Agent",
+                    "description": "NousResearch Hermes Agent with Kori-x real-time dashboard. Built-in s6-overlay supervision runs the gateway, built-in dashboard, and Kori-x monitoring UI together in one container.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "hermes-agent.svg",
+                    "categories": [
+                        "AI",
+                        "Development"
+                    ],
+                    "architecture": [
+                        "amd64"
+                    ],
+                    "notes": "Set Proxy Port to 5173 for the Kori-x monitoring dashboard, or 9119 for the built-in config/session dashboard, or 8642 for raw API access.\n\nDefault model: qwen2.5-coder:7b-32k (local Ollama via LiteLLM proxy at 172.17.0.1:4001).\n\nMount a persistent volume at /opt/data to preserve config, API keys, sessions, skills, and memories across workspace restarts.\n\nPorts: 8642 (OpenAI-compatible API + health), 9119 (built-in dashboard), 5173 (Kori-x UI), 3001 (Kori-x WebSocket), 3002 (Kori-x wiki API).\n\nTemporary working Kasm fallback: Chrome workspace for Hermes dashboard access while native dashboard image is rebuilt on a Kasm base.",
+                    "run_config": {
+                        "hostname": "hermes",
+                        "environment": {
+                            "HERMES_DASHBOARD": "1",
+                            "API_SERVER_ENABLED": "true",
+                            "API_SERVER_HOST": "0.0.0.0",
+                            "HERMES_HOME": "/opt/data",
+                            "HERMES_DASHBOARD_DIR": "/opt/hermes-dashboard",
+                            "OPENAI_BASE_URL": "http://172.17.0.1:4001/v1",
+                            "OPENAI_API_KEY": "sk-local"
+                        },
+                        "volumes": {
+                            "/{username}/hermes-agent": {
+                                "bind": "/opt/data",
+                                "mode": "rw"
+                            }
+                        }
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c \"/init\""
+                        }
+                    },
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "ghcr.io/perspective0labs/hermes-agent-dashboard:latest",
+                            "uncompressed_size_mb": 4200,
+                            "available_tags": [
+                                "latest"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "Home Assistant": {
+                    "friendly_name": "Home Assistant",
+                    "description": "Open-source home automation platform. Control smart home devices, create automations, and monitor your home from a unified web interface on port 8123.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "home-assistant.svg",
+                    "categories": [
+                        "Automation",
+                        "Utilities"
+                    ],
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "homeassistant/home-assistant:stable",
+                            "uncompressed_size_mb": 2200,
+                            "available_tags": [
+                                "stable",
+                                "latest"
+                            ]
+                        }
+                    ],
+                    "notes": "Temporary working Kasm fallback: Chrome workspace while Home Assistant service image is run separately or rebuilt on a Kasm base."
+                }
+            },
+            {
+                "LiteLLM": {
+                    "friendly_name": "LiteLLM",
+                    "description": "LiteLLM Proxy - a unified API gateway for 100+ LLMs including OpenAI, Anthropic, Gemini and local models. Exposes an OpenAI-compatible endpoint on port 4000.",
+                    "docker_registry": "https://index.docker.io/v1/",
+                    "image_src": "litellm.svg",
+                    "categories": [
+                        "AI",
+                        "Development"
+                    ],
+                    "architecture": [
+                        "amd64",
+                        "arm64"
+                    ],
+                    "notes": "Configured to route all requests to local Ollama (qwen2.5-coder:7b-32k) via the WSL2 host at 172.22.48.1:11434.\n\nAnthropics fallback: set ANTHROPIC_API_KEY in the environment to enable.\n\nProxy API key: sk-local\nProxy port: 4000 (inside container)\nSet Kasm Proxy Port to 4000 for API access.\n\nTemporary working Kasm fallback: Chrome workspace while LiteLLM service image is run separately or rebuilt on a Kasm base.",
+                    "run_config": {
+                        "environment": {
+                            "LITELLM_MASTER_KEY": "sk-local",
+                            "LITELLM_LOG": "WARNING"
+                        },
+                        "volumes": {
+                            "/{username}/litellm": {
+                                "bind": "/app/config",
+                                "mode": "ro",
+                                "uid": 1000,
+                                "gid": 1000
+                            }
+                        }
+                    },
+                    "exec_config": {
+                        "go": {
+                            "cmd": "bash -c \"litellm --config /app/config/config.yaml --port 4000 --host 0.0.0.0\""
+                        }
+                    },
+                    "compatibility": [
+                        {
+                            "version": "1.18.x",
+                            "image": "litellm/litellm:v1.92.1",
+                            "uncompressed_size_mb": 1100,
+                            "available_tags": [
+                                "latest",
+                                "v1.92.1"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
     "AtaraxiaSjel/kasm-workspaces-registry": {
         "github_pages": "https://ataraxiasjel.github.io/kasm-workspaces-registry/",
         "stars": 0,
@@ -81,7 +343,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-08-13T12:41:04Z",
+        "last_commit": "2026-08-14T12:37:35Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
