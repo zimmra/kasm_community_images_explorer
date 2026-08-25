@@ -2,7 +2,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-08-23T12:15:41Z",
+        "last_commit": "2026-08-24T12:22:44Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -11595,45 +11595,6 @@
         "stars": 0,
         "last_commit": "2025-11-28T04:43:37Z",
         "workspaces": [
-            {
-                "steam": {
-                    "description": "For team members",
-                    "docker_registry": "https://index.docker.io/v1/",
-                    "image_src": "steam.png",
-                    "cores": 6,
-                    "memory": 8192,
-                    "gpu_count": 0,
-                    "cpu_allocation_method": "Quotas",
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "categories": [
-                        "Desktop"
-                    ],
-                    "friendly_name": "Steam",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        {
-                            "version": "1.16.x",
-                            "image": "tsukisama9292/steam:1.16.1-rolling-daily",
-                            "uncompressed_size_mb": 5000,
-                            "available_tags": [
-                                "1.16.1-rolling-daily"
-                            ]
-                        },
-                        {
-                            "version": "1.17.x",
-                            "image": "tsukisama9292/steam:1.17.0-rolling-daily",
-                            "uncompressed_size_mb": 5000,
-                            "available_tags": [
-                                "1.17.0-rolling-daily"
-                            ]
-                        }
-                    ]
-                }
-            },
             {
                 "ubuntu_jammy_dind_1.16.1": {
                     "description": "For team members",
