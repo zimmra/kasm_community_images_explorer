@@ -2,7 +2,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-08-26T12:24:48Z",
+        "last_commit": "2026-08-27T21:24:05Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -15960,72 +15960,6 @@
                         "Browser"
                     ],
                     "friendly_name": "SensimeshPortal",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        "1.13.x",
-                        "1.14.x",
-                        "1.15.x"
-                    ],
-                    "uncompressed_size_mb": 2170
-                }
-            },
-            {
-                "Terminal": {
-                    "description": "TRE TERMINAL",
-                    "docker_registry": "https://ghcr.io/",
-                    "image_src": "terminal.png",
-                    "name": "nchcdev/workspaces-images/terminal:latest",
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "exec_config": {
-                        "go": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
-                        },
-                        "assign": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
-                        }
-                    },
-                    "categories": [
-                        "Browser"
-                    ],
-                    "friendly_name": "Terminal",
-                    "architecture": [
-                        "amd64",
-                        "arm64"
-                    ],
-                    "compatibility": [
-                        "1.13.x",
-                        "1.14.x",
-                        "1.15.x"
-                    ],
-                    "uncompressed_size_mb": 2170
-                }
-            },
-            {
-                "Ubuntu": {
-                    "description": "TRE UBUNTU",
-                    "docker_registry": "https://ghcr.io/",
-                    "image_src": "ubuntu.png",
-                    "name": "nchcdev/workspaces-images/desktop:latest",
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "exec_config": {
-                        "go": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
-                        },
-                        "assign": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
-                        }
-                    },
-                    "categories": [
-                        "Browser"
-                    ],
-                    "friendly_name": "Ubuntu",
                     "architecture": [
                         "amd64",
                         "arm64"
