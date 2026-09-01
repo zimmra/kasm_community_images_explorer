@@ -2,7 +2,7 @@
     "SourceDiver42/kasm-registry": {
         "github_pages": "https://sourcediver42.github.io/kasm-registry/",
         "stars": 0,
-        "last_commit": "2026-08-30T15:35:58Z",
+        "last_commit": "2026-08-31T18:18:17Z",
         "workspaces": [
             {
                 "Ghidra 10.1.1": {
@@ -28415,44 +28415,6 @@
                         "1.14.x"
                     ],
                     "uncompressed_size_mb": 1250
-                }
-            }
-        ]
-    },
-    "devius/kasm-registry": {
-        "github_pages": "https://devius.github.io/kasm-registry/",
-        "stars": 0,
-        "last_commit": "2023-11-13T08:34:21Z",
-        "workspaces": [
-            {
-                "Desktop": {
-                    "description": "Desktop Setup Test.",
-                    "docker_registry": "https://ghcr.io/",
-                    "image_src": "ubuntu-xfce.png",
-                    "name": "ghcr.io/devius/kasm:latest",
-                    "run_config": {
-                        "hostname": "kasm"
-                    },
-                    "exec_config": {
-                        "go": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
-                        },
-                        "assign": {
-                            "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
-                        }
-                    },
-                    "categories": [
-                        "Desktop"
-                    ],
-                    "friendly_name": "Developer Desktop",
-                    "architecture": [
-                        "amd64"
-                    ],
-                    "compatibility": [
-                        "1.13.x",
-                        "1.14.x"
-                    ],
-                    "uncompressed_size_mb": 2170
                 }
             }
         ]
